@@ -7,24 +7,14 @@ import styles from "../../../../styles/Navbar.module.css";
 interface NavItemProps {
 	title: string;
 	path: string;
+	active: boolean;
 }
 
-const Index: React.FC<NavItemProps> = ({ title, path }) => {
-	const router = useRouter().pathname;
+const Index: React.FC<NavItemProps> = ({ title, path, active }) => {
 	return (
-		<div>
+		<div className={styles.navLink}>
 			<Link href={path}>
-				<p
-					className={`${
-						router.includes("about") &&
-						router.includes("contact") &&
-						router.includes("portfolio")
-							? styles.navItemActive
-							: ''
-					}`}
-				>
-					{title}
-				</p>
+				<p className={`${active && styles.navItemActive}`}>{title}</p>
 			</Link>
 		</div>
 	);

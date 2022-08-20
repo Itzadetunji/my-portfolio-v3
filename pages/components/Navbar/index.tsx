@@ -2,10 +2,20 @@ import { NextPage } from "next";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import NavItem from "./NavItem";
+import NavLink from "./NavLink";
+import SmallNavLink from "./SmallNavLink";
 import styles from "../../../styles/Navbar.module.css";
 
 const Index: NextPage = () => {
+	const [isOpen, setIsOpen] = useState(true);
+	const router = useRouter().pathname;
+	useEffect(() => {
+		if (isOpen == true) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "auto";
+		}
+	}, [isOpen]);
 	return (
 		<nav className={styles.navContainer}>
 			<div className={styles.navContents}>
@@ -18,18 +28,79 @@ const Index: NextPage = () => {
 					src="../icons/nav-icons/hamburger.svg"
 					alt=""
 					className={styles.navHamburger}
+					onClick={() => setIsOpen(!isOpen)}
 				/>
-				<div className={styles.navLinks}>
-					<NavItem title={"Home"} path={"/"} />
-					<NavItem title={"About"} path={"/about"} />
-					<NavItem title={"Portfolio"} path={"/portfolio"} />
-					<NavItem title={"Contact"} path={"/contact"} />
+				<div className={styles.navLinksContainer}>
+					<NavLink
+						title={"Home"}
+						path={"/"}
+						active={
+							!router.includes("about") &&
+							!router.includes("contact") &&
+							!router.includes("portfolio")
+								? true
+								: false
+						}
+					/>
+					<NavLink
+						title={"About"}
+						path={"/about"}
+						active={router.includes("about") ? true : false}
+					/>
+					<NavLink
+						title={"Portfolio"}
+						path={"/portfolio"}
+						active={router.includes("portfolio") ? true : false}
+					/>
+					<NavLink
+						title={"Contact"}
+						path={"/contact"}
+						active={router.includes("contact") ? true : false}
+					/>
 				</div>
-				<div className={styles.navSocialIcons}>
-					<img src="../icons/social-icons/github.svg" alt="" />
-					<img src="../icons/social-icons/linkedin.svg" alt="" />
+				<div className={styles.navSocialIconContainer}>
+					<img
+						src="../icons/social-icons/github.svg"
+						alt=""
+						className={styles.navSocialIcon}
+					/>
+					<img
+						src="../icons/social-icons/linkedin.svg"
+						alt=""
+						className={styles.navSocialIcon}
+					/>
 				</div>
 			</div>
+			{isOpen && (
+				<div className={styles.smallNavContainer}>
+					<SmallNavLink
+						title={"Home"}
+						path={"/"}
+						active={
+							!router.includes("about") &&
+							!router.includes("contact") &&
+							!router.includes("portfolio")
+								? true
+								: false
+						}
+					/>
+					<SmallNavLink
+						title={"About"}
+						path={"/about"}
+						active={router.includes("about") ? true : false}
+					/>
+					<SmallNavLink
+						title={"Portfolio"}
+						path={"/portfolio"}
+						active={router.includes("portfolio") ? true : false}
+					/>
+					<SmallNavLink
+						title={"Contact"}
+						path={"/contact"}
+						active={router.includes("contact") ? true : false}
+					/>
+				</div>
+			)}
 		</nav>
 	);
 };
