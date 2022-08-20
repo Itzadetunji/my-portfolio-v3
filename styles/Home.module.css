@@ -1,0 +1,8 @@
+
+.navContainer{
+  @apply w-full h-[115px] bg-[#0A141D] 
+}
+
+.navContents{
+  @apply w-full flex items-center
+}
