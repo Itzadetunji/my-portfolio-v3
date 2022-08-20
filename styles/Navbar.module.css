@@ -52,7 +52,7 @@
 }
 
 .smallNavLinkBorder{
-  @apply  border-r-[6px] h-[72px] text-white flex items-center justify-center transition hover:border-r-[#5CBEFF] hover:text-[#5CBEFF] duration-200 ease-in-out cursor-pointer
+  @apply  border-r-[6px] border-r-transparent h-[72px] text-white flex items-center justify-center transition hover:border-r-[#5CBEFF] hover:text-[#5CBEFF] duration-200 ease-in-out cursor-pointer
 }
 
 .smallNavLinkBorderActive{
