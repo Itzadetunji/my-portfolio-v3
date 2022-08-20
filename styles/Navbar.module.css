@@ -1,4 +1,3 @@
-
 .navContainer{
   @apply relative w-full h-[115px] bg-[#0A141D] px-[15px] lg:px-[30px] select-none
 }
@@ -44,7 +43,7 @@
 }
 
 .smallNavContainer{
-  @apply absolute bg-[#0A141D] w-full h-[700px] grid grid-cols-1 gap-y-[0px] justify-items-end right-[30px] mr-[30px] sm:hidden
+  @apply absolute bg-[#0A141D] w-full h-[700px] grid grid-cols-1 gap-y-[0px] justify-items-end right-[0px] mr-[30px] sm:hidden
 }
 
 .smallNavLink{
