@@ -1,6 +1,6 @@
 
 .navContainer{
-  @apply relative w-full h-[115px] bg-[#0A141D] px-[15px] lg:px-[30px]
+  @apply relative w-full h-[115px] bg-[#0A141D] px-[15px] lg:px-[30px] select-none
 }
 
 .navContents{
@@ -8,15 +8,23 @@
 }
 
 .navLogo{
-  @apply w-[50px] md:w-[65px] h-[50px] md:h-[65px] 
+  @apply w-[60px] md:w-[65px] h-[60px] md:h-[65px] 
+}
+
+.navHamburgerContainer{
+  @apply w-[80px] h-[50px] flex items-center justify-center hover:border-[2px] rounded-[12px] hover:border-red-300 cursor-pointer transition duration-200 ease-in-out
 }
 
 .navHamburger{
-  @apply w-[58px] h-[32px] sm:hidden cursor-pointer
+  @apply w-[581px] h-[32px] sm:hidden cursor-pointer
+}
+
+.hideHam{
+  @apply w-[70px] h-[63px] sm:hidden cursor-pointer
 }
 
 .navLinksContainer{
-  @apply text-white hidden sm:flex items-center space-x-[40px] md:space-x-[60px] text-[18px] lg:text-[24px]
+  @apply text-white hidden sm:flex items-center space-x-[40px] md:space-x-[60px] text-[20px] lg:text-[24px]
 }
 
 .navLink{
@@ -36,7 +44,7 @@
 }
 
 .smallNavContainer{
-  @apply absolute bg-[#0A141D] w-full h-[700px] grid grid-cols-1 gap-y-[0px] justify-items-end right-[30px]
+  @apply absolute bg-[#0A141D] w-full h-[700px] grid grid-cols-1 gap-y-[0px] justify-items-end right-[30px] mr-[30px] sm:hidden
 }
 
 .smallNavLink{
@@ -52,5 +60,13 @@
 }
 
 .smallNavLinkP{
-  @apply pr-[23px]
+  @apply pr-[25px]
+}
+
+.navSmallSocialContents{
+  @apply flex space-x-[30px] pt-[20px] items-center justify-center w-full 
+}
+
+.navSmallSocialIcon{
+  @apply w-[34px] h-[34px] cursor-pointer
 }

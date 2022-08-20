@@ -7,7 +7,7 @@ import SmallNavLink from "./SmallNavLink";
 import styles from "../../../styles/Navbar.module.css";
 
 const Index: NextPage = () => {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 	const router = useRouter().pathname;
 	useEffect(() => {
 		if (isOpen == true) {
@@ -24,12 +24,12 @@ const Index: NextPage = () => {
 					alt=""
 					className={styles.navLogo}
 				/>
-				<img
-					src="../icons/nav-icons/hamburger.svg"
-					alt=""
-					className={styles.navHamburger}
-					onClick={() => setIsOpen(!isOpen)}
-				/>
+				<label className={styles.hideHam}>
+					<input type="checkbox" onClick={() => setIsOpen(!isOpen)} />
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
 				<div className={styles.navLinksContainer}>
 					<NavLink
 						title={"Home"}
@@ -99,6 +99,20 @@ const Index: NextPage = () => {
 						path={"/contact"}
 						active={router.includes("contact") ? true : false}
 					/>
+					<div className={styles.navSmallSocialContainer}>
+						<div className={styles.navSmallSocialContents}>
+							<img
+								src="../icons/social-icons/github.svg"
+								alt=""
+								className={styles.navSmallSocialIcon}
+							/>
+							<img
+								src="../icons/social-icons/linkedin.svg"
+								alt=""
+								className={styles.navSmallSocialIcon}
+							/>
+						</div>
+					</div>
 				</div>
 			)}
 		</nav>
