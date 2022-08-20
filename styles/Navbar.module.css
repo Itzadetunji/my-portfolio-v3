@@ -1,0 +1,27 @@
+
+.navContainer{
+  @apply w-full h-[115px] bg-[#0A141D] px-[15px] md:px-[30px] text-red-200
+}
+
+.navContents{
+  @apply w-full flex items-center justify-between mt-[25px]
+}
+
+.navLogo{
+  @apply w-[65px] h-[65px] 
+}
+
+.navHamburger{
+  @apply w-[58px] h-[32px] lg:hidden
+}
+
+.navLinks{
+  @apply text-white flex items-center space-x-[60px]
+}
+
+.navItemActive{
+  @apply text-[#5CBEFF]
+}
+.navSocialIcons{
+  @apply flex items-center space-x-[30px]
+}
