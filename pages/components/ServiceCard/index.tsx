@@ -12,7 +12,7 @@ const Index: React.FC<ServiceCardProps> = ({ title, icon, subtitle }) => {
 		<div className={styles.serviceCardContainer}>
 			<div className={styles.serviceCardContents}>
 				<img
-					src={`../icons/service-icons/${title}.svg`}
+					src={`../icons/service-icons/${icon}.svg`}
 					className={styles.serviceCardIcon}
 					alt=""
 				/>

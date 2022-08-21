@@ -1,5 +1,8 @@
+.aboutContainer{
+  @apply sm:mx-[30px] lg:mx-[60px] xl:mx-[90px]
+}
 .servicesContainer {
-  @apply mx-[15px]
+  @apply mt-[80px] mx-auto
 }
 
 .servicesTitle{
@@ -7,5 +10,5 @@
 }
 
 .servicesContents{
-  @apply flex flex-col lg:flex-row
+  @apply flex flex-col justify-center lg:flex-row space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mx-auto mt-[80px]
 }

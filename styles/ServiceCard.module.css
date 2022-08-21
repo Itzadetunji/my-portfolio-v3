@@ -1,5 +1,5 @@
 .serviceCardContainer{
-  @apply bg-[#363C42] rounded-[30px] h-[565px]
+  @apply bg-[#363C42] rounded-[30px] flex flex-col max-w-[350px]
 }
 
 .serviceCardContents{
@@ -15,5 +15,5 @@
 }
 
 .serviceCardSubtitle{
-  @apply text-[20px] font-[450] text-white mx-[20px] mt-[20px] mb-[30px]
+  @apply text-[20px] font-[450] text-white mx-[20px] mt-[20px] pb-[30px]
 }

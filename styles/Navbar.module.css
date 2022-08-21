@@ -1,5 +1,5 @@
 .navContainer{
-  @apply relative w-full h-[115px] bg-[#0A141D] px-[15px] lg:px-[30px] select-none
+  @apply relative w-full h-[115px] bg-[#0A141D] px-[15px] sm:px-[30px] lg:px-[60px] xl:px-[90px] select-none
 }
 
 .navContents{
@@ -23,7 +23,7 @@
 }
 
 .navLinksContainer{
-  @apply text-white hidden sm:flex items-center space-x-[40px] md:space-x-[60px] text-[20px] lg:text-[24px]
+  @apply text-white hidden sm:flex items-center space-x-[30px] md:space-x-[40px] text-[20px] lg:text-[24px]
 }
 
 .navLink{
