@@ -11,7 +11,7 @@
 }
 
 .serviceCardTitle{
-  @apply text-[30px] font-[700] text-[#5CBEFF] mx-auto w-[246px]
+  @apply text-[30px] font-[700] text-[#5CBEFF] mx-auto w-[200px]
 }
 
 .serviceCardSubtitle{
