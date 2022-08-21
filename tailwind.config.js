@@ -9,6 +9,9 @@ module.exports = {
         'xxs': '320px',
         'xs': '428px',
       },
+      fontFamily: {
+        Roboto: ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],

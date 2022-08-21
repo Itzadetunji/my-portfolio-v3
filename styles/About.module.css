@@ -1,0 +1,11 @@
+.servicesContainer {
+  @apply mx-[15px]
+}
+
+.servicesTitle{
+ @apply text-[50px] font-[700] text-white
+}
+
+.servicesContents{
+  @apply flex flex-col lg:flex-row
+}

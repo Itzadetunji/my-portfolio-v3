@@ -13,43 +13,19 @@ import Social_Links from "./components/SocialLinks";
 import Link from "next/link";
 import LargeSocialLinks from "./components/LargeSocialLinks";
 import SideSocialLinks from "./components/SideSocialLinks";
+import styles from "../styles/About.module.css"
+
 
 const About: NextPage = () => {
-	const TestimonialCardContents = [
-		{
-			imagepath: "/images/testimonial1.png",
-			name: "Ludwig Dieter",
-			role: "FullStack Developer",
-			description:
-				"After going through all the steps, I get into the zone 👨🏿‍💻and deliver quality and scalable applications.After going through all the steps, I get into the zone 👨🏿‍💻and deliver quality and scalable applications",
-		},
-		{
-			imagepath: "/images/testimonial1.png",
-			name: "Ludwig Dieter",
-			role: "FullStack Developer",
-			description:
-				"After going through all the steps, I get into the zone 👨🏿‍💻and deliver quality and scalable applications.After going through all the steps, I get into the zone 👨🏿‍💻and deliver quality and scalable applications",
-		},
-		{
-			imagepath: "/images/testimonial1.png",
-			name: "Ludwig Dieter",
-			role: "FullStack Developer",
-			description:
-				"After going through all the steps, I get into the zone 👨🏿‍💻and deliver quality and scalable applications.After going through all the steps, I get into the zone 👨🏿‍💻and deliver quality and scalable applications",
-		},
-		{
-			imagepath: "/images/testimonial1.png",
-			name: "Ludwig Dieter",
-			role: "FullStack Developer",
-			description:
-				"After going through all the steps, I get into the zone 👨🏿‍💻and deliver quality and scalable applications.After going through all the steps, I get into the zone 👨🏿‍💻and deliver quality and scalable applications",
-		},
-	];
-
 	return (
 		<>
 			<Navbar />
-			<div></div>
+			<div className={styles.servicesContainer}>
+				<p className={styles.servicesTitle}>My services</p>
+				<div className={styles.servicesContents}>
+					<ServiceCard/>
+				</div>
+			</div>
 			<Footer />
 		</>
 	);
