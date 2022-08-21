@@ -1,14 +1,18 @@
 .aboutContainer{
-  @apply sm:mx-[30px] lg:mx-[60px] xl:mx-[90px]
+  @apply sm:mx-[30px] lg:mx-[30px] xl:mx-[60px]
 }
 .servicesContainer {
-  @apply mt-[80px] mx-auto
+  @apply mt-[80px] mx-[30px]
 }
 
 .servicesTitle{
  @apply text-[50px] font-[700] text-white
 }
 
+.servicesCardContents{
+  @apply flex flex-col items-center
+}
+
 .servicesContents{
-  @apply flex flex-col justify-center lg:flex-row space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mx-auto mt-[80px]
+  @apply flex flex-col lg:flex-row space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[80px]
 }
