@@ -6,10 +6,20 @@ interface ServiceCardProps {
 	title: string;
 	icon: string;
 	subtitle: string;
+	delay: string;
 }
-const Index: React.FC<ServiceCardProps> = ({ title, icon, subtitle }) => {
+const Index: React.FC<ServiceCardProps> = ({
+	title,
+	icon,
+	subtitle,
+	delay,
+}) => {
 	return (
-		<div className={styles.serviceCardContainer}>
+		<div
+			className={styles.serviceCardContainer}
+			data-aos="fade-up"
+			data-aos-delay={delay}
+		>
 			<div className={styles.serviceCardContents}>
 				<img
 					src={`../icons/service-icons/${icon}.svg`}
