@@ -13,6 +13,10 @@
   @apply flex flex-col items-center
 }
 
-.servicesContents{
-  @apply flex flex-col lg:flex-row space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[80px]
+.servicesContents1{
+  @apply hidden lg:flex flex-col lg:flex-row space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[1080px]
+}
+
+.servicesContents2{
+  @apply flex flex-col lg:hidden space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[1080px]
 }
