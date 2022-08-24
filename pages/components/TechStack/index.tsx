@@ -153,7 +153,7 @@ const TechStack: NextPage = () => {
 	];
 	return (
 		<>
-			<div className={styles.techStackComponentContainer}>
+			<div className={styles.techStackComponentContainer} >
 				<div
 					className={`${styles.techStackComponent} ${styles.techStackAnimate} `}
 				>

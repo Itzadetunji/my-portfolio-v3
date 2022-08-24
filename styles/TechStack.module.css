@@ -1,5 +1,5 @@
 .techStackComponentContainer{
-  @apply overflow-hidden flex flex-col space-y-[15px]
+  @apply overflow-hidden flex flex-col space-y-[15px] mx-[-30px] mt-[80px]
 }
 
 .techStackComponent{

@@ -136,6 +136,7 @@ const About: NextPage = () => {
 					</div>
 				</div>
 				<div className={styles.techStackContainer}>
+					<p className={styles.workProcessTitle}>My Tech Stack</p>
 					<TechStack />
 				</div>
 			</div>
