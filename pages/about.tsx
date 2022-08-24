@@ -80,8 +80,59 @@ const About: NextPage = () => {
 				</div>
 				<div className={styles.workProcessContainer}>
 					<p className={styles.workProcessTitle}>My Work Process</p>
-					<div className={styles.servicesCardContents}>
-						<WorkProcess/>
+					<div className={styles.workProcessContents}>
+						<div className={styles.workProcessContent1}>
+							<WorkProcess
+								title={"Discover"}
+								icon={"discover"}
+								subtitle={
+									"In order to discover the issues that I am attempting to resolve, I conduct personal research."
+								}
+								delay={"0"}
+							/>
+							<WorkProcess
+								title={"Define"}
+								icon={"define"}
+								subtitle={
+									"I consider the various solutions that could be used for the problem that has been found."
+								}
+								delay={"250"}
+							/>
+							<WorkProcess
+								title={"Discover"}
+								icon={"implement"}
+								subtitle={
+									"I put in the work, get into the zone👨🏿‍💻, and build scalable and high-quality apps.."
+								}
+								delay={"500"}
+							/>
+						</div>
+						<div className={styles.workProcessContent2}>
+							<WorkProcess
+								title={"Discover"}
+								icon={"discover"}
+								subtitle={
+									"In order to discover the issues that I am attempting to resolve, I conduct personal research."
+								}
+								delay={"0"}
+							/>
+							<WorkProcess
+								title={"Define"}
+								icon={"define"}
+								subtitle={
+									"I consider the various solutions that could be used for the problem that has been found."
+								}
+								delay={"0"}
+							/>
+							<WorkProcess
+								title={"Discover"}
+								icon={"implement"}
+								subtitle={
+									"I put in the work, get into the zone👨🏿‍💻, and build scalable and high-quality apps."
+								}
+								delay={"0"}
+							/>
+						</div>
 					</div>
 				</div>
 			</div>

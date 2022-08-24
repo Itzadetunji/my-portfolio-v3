@@ -43,7 +43,7 @@
 }
 
 .smallNavContainer{
-  @apply absolute bg-[#0A141D] w-full h-[700px] grid grid-cols-1 gap-y-[0px] justify-items-end right-[0px] mr-[30px] sm:hidden
+  @apply fixed z-50 bg-[#0A141D] w-full h-full grid grid-cols-1 gap-y-[0px] justify-items-end right-[0px] mr-[30px] sm:hidden
 }
 
 .smallNavLink{
