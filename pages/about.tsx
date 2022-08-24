@@ -57,6 +57,7 @@ const About: NextPage = () => {
 								subtitle={
 									"I am proficient in front-end languages including Node.js, and React.js. I focus on We focusson using technologies that not only make your solutions attractive, but also enhance its performance. I ensure  Ul/UX of your application and product is user-friendly."
 								}
+								delay={"0"}
 							/>
 							<ServiceCard
 								title={"Back End Development"}
@@ -64,6 +65,7 @@ const About: NextPage = () => {
 								subtitle={
 									"I build server side solutions as a back end developer that perform effectively and go far beyond your expectations. NodeJS is my field of expertise.  I have a solid understanding of how to integrate databases together using code."
 								}
+								delay={"0"}
 							/>
 							<ServiceCard
 								title={"API Integration"}
@@ -71,6 +73,7 @@ const About: NextPage = () => {
 								subtitle={
 									"API integration is the process of setting up a way for two or more APIs to exchange data and communicate with one another without the need for human intervention. I am able to both use APIs that other apps create and consume from third parties."
 								}
+								delay={"0"}
 							/>
 						</div>
 					</div>

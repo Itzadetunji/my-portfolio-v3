@@ -19,6 +19,7 @@ const Index: React.FC<ServiceCardProps> = ({
 			className={styles.serviceCardContainer}
 			data-aos="fade-up"
 			data-aos-delay={delay}
+			data-aos-offset="200"
 		>
 			<div className={styles.serviceCardContents}>
 				<img
