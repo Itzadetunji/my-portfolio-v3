@@ -6,7 +6,7 @@ import Button from "./components/Button";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ServiceCard from "./components/ServiceCard";
-import WorkProcess from "./components/WorkProcess";
+import WorkProcess from "./components/WorkProcessCard";
 import TestimonialCard from "./components/TestimonialCard";
 import TechStack from "./components/TechStack";
 import Social_Links from "./components/SocialLinks";
@@ -76,6 +76,12 @@ const About: NextPage = () => {
 								delay={"0"}
 							/>
 						</div>
+					</div>
+				</div>
+				<div className={styles.workProcessContainer}>
+					<p className={styles.workProcessTitle}>My Work Process</p>
+					<div className={styles.servicesCardContents}>
+						<WorkProcess/>
 					</div>
 				</div>
 			</div>

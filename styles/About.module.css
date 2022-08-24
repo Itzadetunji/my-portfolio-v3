@@ -14,9 +14,17 @@
 }
 
 .servicesContents1{
-  @apply hidden lg:flex flex-col lg:flex-row space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[1080px]
+  @apply hidden lg:flex flex-col lg:flex-row space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[80px]
 }
 
 .servicesContents2{
   @apply flex flex-col lg:hidden space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[1080px]
+}
+
+.workProcessContainer{
+  @apply mt-[80px] mx-[30px]
+}
+
+.workProcessTitle{
+  @apply text-[50px] font-[700] text-white
 }
