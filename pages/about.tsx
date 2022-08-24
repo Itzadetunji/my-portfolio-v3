@@ -135,6 +135,9 @@ const About: NextPage = () => {
 						</div>
 					</div>
 				</div>
+				<div className={styles.techStackContainer}>
+					<TechStack />
+				</div>
 			</div>
 			<Footer />
 		</>
