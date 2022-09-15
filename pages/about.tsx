@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable @next/next/no-img-element */
 import { NextPage } from "next";
 import React from "react";
 import Link from "next/link";

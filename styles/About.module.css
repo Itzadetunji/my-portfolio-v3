@@ -1,8 +1,8 @@
 .aboutContainer {
-	@apply sm:mx-[30px] lg:mx-[30px] xl:mx-[60px];
+	@apply sm:mx-8 lg:mx-8 xl:mx-[60px];
 }
 .servicesContainer {
-	@apply mt-[80px] mx-[30px];
+	@apply mt-[80px] mx-8;
 }
 
 .servicesTitle {
@@ -22,7 +22,7 @@
 }
 
 .workProcessContainer {
-	@apply mt-[80px] mx-[30px];
+	@apply mt-[80px] mx-8;
 }
 
 .workProcessTitle {
@@ -42,5 +42,5 @@
 }
 
 .techStackContainer {
-	@apply mt-[80px] mx-[30px];
+	@apply mt-[80px] mx-8;
 }

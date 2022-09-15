@@ -1,5 +1,6 @@
 // Get Contact Form Data and send email with nodemailer
-const nodemailer = require("nodemailer");
+// import nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
 	const { name, email, subject, message } = req.body;
@@ -37,7 +38,7 @@ export default async function handler(req, res) {
 
 	try {
 		// Send email
-		await transporter.sendMail(mailOptions, (err, info) => {
+		await transporter.sendMail(mailOptions, (err: any, info: any) => {
 			if (err) {
 				return res.status(500).json({ error: err.message });
 			}
