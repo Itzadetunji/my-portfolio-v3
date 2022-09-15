@@ -2,11 +2,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Social_Links from "./components/SocialLinks";
-import Button from "./components/Button";
-import PortfolioCard from "./components/PortfolioCard";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Social_Links from "../components/SocialLinks";
+import Button from "../components/Button";
+import PortfolioCard from "../components/PortfolioCard";
 import Link from "next/link";
 import { NextPage } from "next";
 

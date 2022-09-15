@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
-import styles from "../../../styles/TechStack.module.css";
+import styles from "../../styles/TechStack.module.css";
 
 const TechStack: NextPage = () => {
 	const TechStackContents1 = [

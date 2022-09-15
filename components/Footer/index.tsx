@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
-import styles from "../../../styles/Footer.module.css";
+import styles from "../../styles/Footer.module.css";
 
 const Footer: NextPage = () => {
 	return (

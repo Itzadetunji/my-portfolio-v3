@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import NavLink from "./NavLink";
 import SmallNavLink from "./SmallNavLink";
-import styles from "../../../styles/Navbar.module.css";
+import styles from "../../styles/Navbar.module.css";
 
 const Index: NextPage = () => {
 	const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
-import styles from "../../../styles/WorkProcessCard.module.css";
+import styles from "../../styles/WorkProcessCard.module.css";
 
 interface WorkProcessCardProps {
 	title: string;

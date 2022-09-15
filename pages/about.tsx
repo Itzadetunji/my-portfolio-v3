@@ -2,17 +2,17 @@
 /* eslint-disable @next/next/no-img-element */
 import { NextPage } from "next";
 import React from "react";
-import Button from "./components/Button";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import ServiceCard from "./components/ServiceCard";
-import WorkProcess from "./components/WorkProcessCard";
-import TestimonialCard from "./components/TestimonialCard";
-import TechStack from "./components/TechStack";
-import Social_Links from "./components/SocialLinks";
+import Button from "../components/Button";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import ServiceCard from "../components/ServiceCard";
+import WorkProcess from "../components/WorkProcessCard";
+import TestimonialCard from "../components/TestimonialCard";
+import TechStack from "../components/TechStack";
+import Social_Links from "../components/SocialLinks";
 import Link from "next/link";
-import LargeSocialLinks from "./components/LargeSocialLinks";
-import SideSocialLinks from "./components/SideSocialLinks";
+import LargeSocialLinks from "../components/LargeSocialLinks";
+import SideSocialLinks from "../components/SideSocialLinks";
 import styles from "../styles/About.module.css";
 import Head from "next/head";
 
@@ -22,7 +22,7 @@ const About: NextPage = () => {
 			<Navbar />
 			<div className={styles.aboutContainer}>
 				<div className={styles.servicesContainer}>
-					<p className={styles.servicesTitle}>My services</p>
+					<p className={`sectionTitle`}>My services</p>
 					<div className={styles.servicesCardContents}>
 						<div className={`${styles.servicesContents1}`}>
 							<ServiceCard
@@ -67,7 +67,7 @@ const About: NextPage = () => {
 					</div>
 				</div>
 				<div className={styles.workProcessContainer}>
-					<p className={styles.workProcessTitle}>My Work Process</p>
+					<p className={`sectionTitle`}>My Work Process</p>
 					<div className={styles.workProcessContents}>
 						<div className={styles.workProcessContent1}>
 							<WorkProcess
@@ -85,7 +85,7 @@ const About: NextPage = () => {
 							<WorkProcess
 								title={"Discover"}
 								icon={"implement"}
-								subtitle={"I put in the work, get into the zone👨🏿‍💻, and build scalable and high-quality apps.."}
+								subtitle={"I put in the work, get into the zone👨🏿‍💻, and build scalable and high-quality apps."}
 								delay={"500"}
 							/>
 						</div>
@@ -112,10 +112,11 @@ const About: NextPage = () => {
 					</div>
 				</div>
 				<div className={styles.techStackContainer}>
-					<p className={styles.workProcessTitle}>My Tech Stack</p>
+					<p className={`sectionTitle`}>My Tech Stack</p>
 					<TechStack />
 				</div>
 			</div>
+			<ContactMe />
 			<Footer />
 		</>
 	);

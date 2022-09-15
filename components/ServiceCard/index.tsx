@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
-import styles from "../../../styles/ServiceCard.module.css";
+import styles from "../../styles/ServiceCard.module.css";
 
 interface ServiceCardProps {
 	title: string;
