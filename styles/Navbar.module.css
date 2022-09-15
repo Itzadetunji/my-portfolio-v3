@@ -1,71 +1,71 @@
-.navContainer{
-  @apply relative w-full h-[115px] bg-[#0A141D] px-[15px] sm:px-[30px] lg:px-[60px] xl:px-[90px] select-none
+.navContainer {
+	@apply relative w-full h-[115px] bg-[#0A141D] px-[15px] sm:px-[30px] lg:px-[60px] xl:px-[90px] select-none;
 }
 
-.navContents{
-  @apply w-full flex items-center justify-between mt-[25px]
+.navContents {
+	@apply w-full flex items-center justify-between mt-[25px];
 }
 
-.navLogo{
-  @apply w-[60px] md:w-[65px] h-[60px] md:h-[65px] 
+.navLogo {
+	@apply w-[60px] md:w-[65px] h-[60px] md:h-[65px];
 }
 
-.navHamburgerContainer{
-  @apply w-[80px] h-[50px] flex items-center justify-center hover:border-[2px] rounded-[12px] hover:border-red-300 cursor-pointer transition duration-200 ease-in-out
+.navHamburgerContainer {
+	@apply w-[80px] h-[50px] flex items-center justify-center hover:border-[2px] rounded-[12px] hover:border-red-300 cursor-pointer transition duration-200 ease-in-out;
 }
 
-.navHamburger{
-  @apply w-[581px] h-[32px] sm:hidden cursor-pointer
+.navHamburger {
+	@apply w-[581px] h-[32px] sm:hidden cursor-pointer;
 }
 
-.hideHam{
-  @apply w-[70px] h-[63px] sm:hidden cursor-pointer
+.hideHam {
+	@apply w-[70px] h-[63px] sm:hidden cursor-pointer;
 }
 
-.navLinksContainer{
-  @apply text-white hidden sm:flex items-center space-x-[30px] md:space-x-[40px] text-[20px] lg:text-[24px]
+.navLinksContainer {
+	@apply text-white hidden sm:flex items-center space-x-[30px] md:space-x-[40px] text-[20px] lg:text-[24px];
 }
 
-.navLink{
-  @apply transition hover:text-[#5CBEFF] duration-200 ease-in-out cursor-pointer
+.navLink {
+	@apply transition hover:text-[#5CBEFF] duration-200 ease-in-out cursor-pointer;
 }
 
-.navItemActive{
-  @apply text-[#5CBEFF]
+.navItemActive {
+	@apply text-[#5CBEFF];
 }
 
-.navSocialIconContainer{
-  @apply hidden sm:flex items-center space-x-[30px]
+.navSocialIconContainer {
+	@apply hidden sm:flex items-center space-x-[30px];
 }
 
-.navSocialIcon{
- @apply cursor-pointer w-[28px] md:w-full h-[28px] md:h-full
+.navSocialIcon {
+	@apply cursor-pointer w-[28px] md:w-full h-[28px] md:h-full;
 }
 
-.smallNavContainer{
-  @apply fixed z-50 bg-[#0A141D] w-full h-full grid grid-cols-1 gap-y-[0px] justify-items-end right-[0px] mr-[30px] sm:hidden
+.smallNavContainer {
+	@apply fixed z-50 bg-[#0A141D] w-full h-full grid grid-cols-1 gap-y-[0px] justify-items-end right-[0px] mr-[30px] sm:hidden;
 }
 
-.smallNavLink{
-  @apply text-[32px] flex items-center justify-center
+.smallNavLink {
+	@apply text-[32px] flex items-center justify-center;
 }
 
-.smallNavLinkBorder{
-  @apply  border-r-[6px] border-r-transparent h-[72px] text-white flex items-center justify-center transition hover:border-r-[#5CBEFF] hover:text-[#5CBEFF] duration-200 ease-in-out cursor-pointer
+.smallNavLinkBorder {
+	@apply border-r-[6px] border-r-transparent h-[72px] text-white flex items-center justify-center transition hover:border-r-[#5CBEFF] hover:text-[#5CBEFF] duration-200 ease-in-out cursor-pointer;
 }
 
-.smallNavLinkBorderActive{
-  @apply box-border text-[#5CBEFF] border-r-[#5CBEFF]
+.smallNavLinkBorderActive {
+	@apply box-border text-[#5CBEFF] border-r-[#5CBEFF];
 }
 
-.smallNavLinkP{
-  @apply pr-[25px]
+.smallNavLinkP {
+	@apply pr-[25px];
 }
 
-.navSmallSocialContents{
-  @apply flex space-x-[30px] pt-[20px] items-center justify-center w-full 
+.navSmallSocialContents {
+	@apply flex space-x-[30px] pt-[20px] items-center justify-center w-full;
 }
 
-.navSmallSocialIcon{
-  @apply w-[34px] h-[34px] cursor-pointer
+.navSmallSocialIcon {
+	@apply w-[34px] h-[34px] cursor-pointer;
 }

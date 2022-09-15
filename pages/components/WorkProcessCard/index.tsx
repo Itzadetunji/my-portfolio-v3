@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
-import styles from "../../../styles/WorkProcessCard.module.css"
+import styles from "../../../styles/WorkProcessCard.module.css";
 
 interface WorkProcessCardProps {
 	title: string;
@@ -9,12 +9,7 @@ interface WorkProcessCardProps {
 	delay: string;
 }
 
-const WorkProcessCard: React.FC<WorkProcessCardProps> = ({
-	title,
-	icon,
-	subtitle,
-	delay,
-}) => {
+const WorkProcessCard: React.FC<WorkProcessCardProps> = ({ title, icon, subtitle, delay }) => {
 	return (
 		<div
 			className={styles.workProcessCardContainer}

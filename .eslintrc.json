@@ -1,8 +1,8 @@
 {
-  "extends": "next/core-web-vitals",
-  "rules": {
-    // Other rules
-    "@next/next/no-img-element": "off",
-    "@next/next/link-passhref": "off"
-  }
+	"extends": "next/core-web-vitals",
+	"rules": {
+		// Other rules
+		"@next/next/no-img-element": "off",
+		"@next/next/link-passhref": "off"
+	}
 }

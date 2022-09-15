@@ -1,33 +1,33 @@
-.techStackComponentContainer{
-  @apply overflow-hidden flex flex-col space-y-[15px] mx-[-30px] mt-[80px]
+.techStackComponentContainer {
+	@apply overflow-hidden flex flex-col space-y-[15px] mx-[-30px] mt-[80px];
 }
 
-.techStackComponent{
-  @apply flex flex-row space-x-[47px] relative
+.techStackComponent {
+	@apply flex flex-row space-x-[47px] relative;
 }
 
 @keyframes techStackAnimation {
-  0% {
-    left: 0
-  }
-  100% {
-    left: -810px;
-  }
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -810px;
+	}
 }
 
 .techStackAnimate {
-  animation: techStackAnimation 40s linear infinite;
+	animation: techStackAnimation 40s linear infinite;
 }
 
 @keyframes techStackAnimationReversed {
-  0% {
-    right: 810px;
-  }
-  100% {
-    right: 0;
-  }
+	0% {
+		right: 810px;
+	}
+	100% {
+		right: 0;
+	}
 }
 
 .techStackAnimateReversed {
-  animation: techStackAnimationReversed 40s linear infinite;
+	animation: techStackAnimationReversed 40s linear infinite;
 }

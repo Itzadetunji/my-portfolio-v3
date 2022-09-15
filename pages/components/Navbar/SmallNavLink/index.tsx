@@ -13,11 +13,7 @@ const Index: React.FC<SmallNavItemProps> = ({ title, path, active }) => {
 	return (
 		<Link href={path}>
 			<div className={styles.smallNavLink}>
-				<div
-					className={`${styles.smallNavLinkBorder} ${
-						active && styles.smallNavLinkBorderActive
-					}`}
-				>
+				<div className={`${styles.smallNavLinkBorder} ${active && styles.smallNavLinkBorderActive}`}>
 					<p className={styles.smallNavLinkP}>{title}</p>
 				</div>
 			</div>

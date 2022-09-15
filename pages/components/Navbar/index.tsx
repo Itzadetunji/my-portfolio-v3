@@ -25,7 +25,10 @@ const Index: NextPage = () => {
 					className={styles.navLogo}
 				/>
 				<label className={styles.hideHam}>
-					<input type="checkbox" onClick={() => setIsOpen(!isOpen)} />
+					<input
+						type="checkbox"
+						onClick={() => setIsOpen(!isOpen)}
+					/>
 					<span></span>
 					<span></span>
 					<span></span>
@@ -34,13 +37,7 @@ const Index: NextPage = () => {
 					<NavLink
 						title={"Home"}
 						path={"/"}
-						active={
-							!router.includes("about") &&
-							!router.includes("contact") &&
-							!router.includes("portfolio")
-								? true
-								: false
-						}
+						active={!router.includes("about") && !router.includes("contact") && !router.includes("portfolio") ? true : false}
 					/>
 					<NavLink
 						title={"About"}
@@ -76,13 +73,7 @@ const Index: NextPage = () => {
 					<SmallNavLink
 						title={"Home"}
 						path={"/"}
-						active={
-							!router.includes("about") &&
-							!router.includes("contact") &&
-							!router.includes("portfolio")
-								? true
-								: false
-						}
+						active={!router.includes("about") && !router.includes("contact") && !router.includes("portfolio") ? true : false}
 					/>
 					<SmallNavLink
 						title={"About"}

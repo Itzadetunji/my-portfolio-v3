@@ -8,9 +8,7 @@ const Footer: NextPage = () => {
 			<div className={styles.footerContents}>
 				<p>
 					{" "}
-					Copyright <span className={styles.footerSpan}>
-						©
-					</span> 2022{" "}
+					Copyright <span className={styles.footerSpan}>©</span> 2022{" "}
 					<span
 						className={styles.footerSpan}
 						style={{ backgroundColor: "transparent" }}

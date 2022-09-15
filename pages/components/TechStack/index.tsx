@@ -153,19 +153,23 @@ const TechStack: NextPage = () => {
 	];
 	return (
 		<>
-			<div className={styles.techStackComponentContainer} >
-				<div
-					className={`${styles.techStackComponent} ${styles.techStackAnimate} `}
-				>
+			<div className={styles.techStackComponentContainer}>
+				<div className={`${styles.techStackComponent} ${styles.techStackAnimate} `}>
 					{TechStackContents1.map((stack, index) => (
-						<img src={stack.path} alt={stack.name} key={index} />
+						<img
+							src={stack.path}
+							alt={stack.name}
+							key={index}
+						/>
 					))}
 				</div>
-				<div
-					className={`${styles.techStackComponent} ${styles.techStackAnimateReversed} `}
-				>
+				<div className={`${styles.techStackComponent} ${styles.techStackAnimateReversed} `}>
 					{TechStackContents2.map((stack2, index) => (
-						<img src={stack2.path} alt={stack2.name} key={index} />
+						<img
+							src={stack2.path}
+							alt={stack2.name}
+							key={index}
+						/>
 					))}
 				</div>
 			</div>

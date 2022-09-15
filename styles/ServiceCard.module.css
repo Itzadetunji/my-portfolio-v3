@@ -1,19 +1,19 @@
-.serviceCardContainer{
-  @apply bg-[#363C42] rounded-[30px] max-w-[350px]
+.serviceCardContainer {
+	@apply bg-[#363C42] rounded-[30px] max-w-[350px];
 }
 
-.serviceCardContents{
-  @apply mx-auto mt-[30px] text-center leading-[35px] my-[10px] flex flex-col space-y-[20px]
+.serviceCardContents {
+	@apply mx-auto mt-[30px] text-center leading-[35px] my-[10px] flex flex-col space-y-[20px];
 }
 
-.serviceCardIcon{
-  @apply w-[80px] h-[80px] mx-auto
+.serviceCardIcon {
+	@apply w-[80px] h-[80px] mx-auto;
 }
 
-.serviceCardTitle{
-  @apply text-[30px] font-[700] text-[#5CBEFF] mx-auto w-[200px]
+.serviceCardTitle {
+	@apply text-[30px] font-[700] text-[#5CBEFF] mx-auto w-[200px];
 }
 
-.serviceCardSubtitle{
-  @apply text-[20px] font-[450] text-white mx-[20px] pb-[30px]
-}tunj i is a big
+.serviceCardSubtitle {
+	@apply text-[20px] font-[450] text-white mx-[20px] pb-[30px];
+}

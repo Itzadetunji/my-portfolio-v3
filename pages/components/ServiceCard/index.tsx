@@ -8,12 +8,7 @@ interface ServiceCardProps {
 	subtitle: string;
 	delay: string;
 }
-const Index: React.FC<ServiceCardProps> = ({
-	title,
-	icon,
-	subtitle,
-	delay,
-}) => {
+const Index: React.FC<ServiceCardProps> = ({ title, icon, subtitle, delay }) => {
 	return (
 		<div
 			className={styles.serviceCardContainer}

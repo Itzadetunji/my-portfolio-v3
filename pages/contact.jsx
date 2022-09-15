@@ -57,7 +57,7 @@ const Contact = () => {
 	return (
 		<>
 			<Navbar />
-			
+
 			<Footer />
 		</>
 	);

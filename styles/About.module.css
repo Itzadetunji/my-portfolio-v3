@@ -1,46 +1,46 @@
-.aboutContainer{
-  @apply sm:mx-[30px] lg:mx-[30px] xl:mx-[60px]
+.aboutContainer {
+	@apply sm:mx-[30px] lg:mx-[30px] xl:mx-[60px];
 }
 .servicesContainer {
-  @apply mt-[80px] mx-[30px]
+	@apply mt-[80px] mx-[30px];
 }
 
-.servicesTitle{
- @apply text-[50px] font-[700] text-white
+.servicesTitle {
+	@apply text-[50px] font-[700] text-white;
 }
 
-.servicesCardContents{
-  @apply flex flex-col items-center
+.servicesCardContents {
+	@apply flex flex-col items-center;
 }
 
-.servicesContents1{
-  @apply hidden lg:flex flex-col lg:flex-row space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[80px]
+.servicesContents1 {
+	@apply hidden lg:flex flex-col lg:flex-row space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[80px];
 }
 
-.servicesContents2{
-  @apply flex flex-col lg:hidden space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[80px]
+.servicesContents2 {
+	@apply flex flex-col lg:hidden space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[80px];
 }
 
-.workProcessContainer{
-  @apply mt-[80px] mx-[30px]
+.workProcessContainer {
+	@apply mt-[80px] mx-[30px];
 }
 
-.workProcessTitle{
-  @apply text-[50px] font-[700] text-white
+.workProcessTitle {
+	@apply text-[50px] font-[700] text-white;
 }
 
-.workProcessContents{
-  @apply flex flex-col items-center
+.workProcessContents {
+	@apply flex flex-col items-center;
 }
 
-.workProcessContent1{
-  @apply hidden lg:flex flex-col lg:flex-row space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[80px]
+.workProcessContent1 {
+	@apply hidden lg:flex flex-col lg:flex-row space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[80px];
 }
 
-.workProcessContent2{
-  @apply flex flex-col lg:hidden space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[90px]
+.workProcessContent2 {
+	@apply flex flex-col lg:hidden space-y-[100px] lg:space-y-0 lg:space-x-[30px] xl:space-x-[90px] mt-[90px];
 }
 
-.techStackContainer{
-  @apply mt-[80px] mx-[30px]
+.techStackContainer {
+	@apply mt-[80px] mx-[30px];
 }
