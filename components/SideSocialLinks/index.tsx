@@ -2,8 +2,6 @@ import { NextPage } from "next";
 import Link from "next/link";
 import React from "react";
 
-const index: NextPage = () => {
+export const SideSocialLinks: NextPage = () => {
 	return <div></div>;
 };
-
-export default index;

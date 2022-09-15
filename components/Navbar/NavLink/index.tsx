@@ -10,7 +10,7 @@ interface NavItemProps {
 	active: boolean;
 }
 
-const Index: React.FC<NavItemProps> = ({ title, path, active }) => {
+export const NavLink: React.FC<NavItemProps> = ({ title, path, active }) => {
 	return (
 		<div className={styles.navLink}>
 			<Link href={path}>
@@ -19,5 +19,3 @@ const Index: React.FC<NavItemProps> = ({ title, path, active }) => {
 		</div>
 	);
 };
-
-export default Index;

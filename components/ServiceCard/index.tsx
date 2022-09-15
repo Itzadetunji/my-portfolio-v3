@@ -8,7 +8,7 @@ interface ServiceCardProps {
 	subtitle: string;
 	delay: string;
 }
-const Index: React.FC<ServiceCardProps> = ({ title, icon, subtitle, delay }) => {
+export const ServiceCard: React.FC<ServiceCardProps> = ({ title, icon, subtitle, delay }) => {
 	return (
 		<div
 			className={styles.serviceCardContainer}
@@ -28,5 +28,3 @@ const Index: React.FC<ServiceCardProps> = ({ title, icon, subtitle, delay }) => 
 		</div>
 	);
 };
-
-export default Index;

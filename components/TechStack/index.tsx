@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import React from "react";
 import styles from "../../styles/TechStack.module.css";
 
-const TechStack: NextPage = () => {
+export const TechStack: NextPage = () => {
 	const TechStackContents1 = [
 		{
 			path: "../icons/stack-icons/html.svg",
@@ -176,5 +176,3 @@ const TechStack: NextPage = () => {
 		</>
 	);
 };
-
-export default TechStack;

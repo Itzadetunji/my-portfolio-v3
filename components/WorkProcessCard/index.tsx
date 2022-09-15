@@ -9,7 +9,7 @@ interface WorkProcessCardProps {
 	delay: string;
 }
 
-const WorkProcessCard: React.FC<WorkProcessCardProps> = ({ title, icon, subtitle, delay }) => {
+export const WorkProcessCard: React.FC<WorkProcessCardProps> = ({ title, icon, subtitle, delay }) => {
 	return (
 		<div
 			className={styles.workProcessCardContainer}
@@ -29,5 +29,3 @@ const WorkProcessCard: React.FC<WorkProcessCardProps> = ({ title, icon, subtitle
 		</div>
 	);
 };
-
-export default WorkProcessCard;

@@ -6,7 +6,7 @@ import NavLink from "./NavLink";
 import SmallNavLink from "./SmallNavLink";
 import styles from "../../styles/Navbar.module.css";
 
-const Index: NextPage = () => {
+export const Navbar: NextPage = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const router = useRouter().pathname;
 	useEffect(() => {
@@ -109,5 +109,3 @@ const Index: NextPage = () => {
 		</nav>
 	);
 };
-
-export default Index;

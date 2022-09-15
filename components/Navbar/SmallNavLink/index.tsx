@@ -9,7 +9,7 @@ interface SmallNavItemProps {
 	active: boolean;
 }
 
-const Index: React.FC<SmallNavItemProps> = ({ title, path, active }) => {
+export const Index: React.FC<SmallNavItemProps> = ({ title, path, active }) => {
 	return (
 		<Link href={path}>
 			<div className={styles.smallNavLink}>
@@ -20,5 +20,3 @@ const Index: React.FC<SmallNavItemProps> = ({ title, path, active }) => {
 		</Link>
 	);
 };
-
-export default Index;
