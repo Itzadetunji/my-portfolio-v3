@@ -2,19 +2,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { NextPage } from "next";
 import React from "react";
-import Button from "../components/Button";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import ServiceCard from "../components/ServiceCard";
-import WorkProcess from "../components/WorkProcessCard";
-import TestimonialCard from "../components/TestimonialCard";
-import TechStack from "../components/TechStack";
-import Social_Links from "../components/SocialLinks";
 import Link from "next/link";
-import LargeSocialLinks from "../components/LargeSocialLinks";
-import SideSocialLinks from "../components/SideSocialLinks";
 import styles from "../styles/About.module.css";
 import Head from "next/head";
+import { Button, ContactMe, Footer, LargeSocialLinks, Navbar, ServiceCard, SideSocialLinks, SocialLinks, TechStack, TestimonialCard, WorkProcessCard } from "../components";
 
 const About: NextPage = () => {
 	return (
@@ -70,19 +61,19 @@ const About: NextPage = () => {
 					<p className={`sectionTitle`}>My Work Process</p>
 					<div className={styles.workProcessContents}>
 						<div className={styles.workProcessContent1}>
-							<WorkProcess
+							<WorkProcessCard
 								title={"Discover"}
 								icon={"discover"}
 								subtitle={"In order to discover the issues that I am attempting to resolve, I conduct personal research."}
 								delay={"0"}
 							/>
-							<WorkProcess
+							<WorkProcessCard
 								title={"Define"}
 								icon={"define"}
 								subtitle={"I consider the various solutions that could be used for the problem that has been found."}
 								delay={"250"}
 							/>
-							<WorkProcess
+							<WorkProcessCard
 								title={"Discover"}
 								icon={"implement"}
 								subtitle={"I put in the work, get into the zone👨🏿‍💻, and build scalable and high-quality apps."}
@@ -90,19 +81,19 @@ const About: NextPage = () => {
 							/>
 						</div>
 						<div className={styles.workProcessContent2}>
-							<WorkProcess
+							<WorkProcessCard
 								title={"Discover"}
 								icon={"discover"}
 								subtitle={"In order to discover the issues that I am attempting to resolve, I conduct personal research."}
 								delay={"0"}
 							/>
-							<WorkProcess
+							<WorkProcessCard
 								title={"Define"}
 								icon={"define"}
 								subtitle={"I consider the various solutions that could be used for the problem that has been found."}
 								delay={"0"}
 							/>
-							<WorkProcess
+							<WorkProcessCard
 								title={"Discover"}
 								icon={"implement"}
 								subtitle={"I put in the work, get into the zone👨🏿‍💻, and build scalable and high-quality apps."}

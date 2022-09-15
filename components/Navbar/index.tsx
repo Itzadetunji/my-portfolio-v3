@@ -2,8 +2,7 @@ import { NextPage } from "next";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import NavLink from "./NavLink";
-import SmallNavLink from "./SmallNavLink";
+import { NavLink, SmallNavLink } from "../";
 import styles from "../../styles/Navbar.module.css";
 
 export const Navbar: NextPage = () => {
