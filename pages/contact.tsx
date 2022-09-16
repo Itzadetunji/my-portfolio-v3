@@ -49,8 +49,8 @@ const Contact = () => {
 		<>
 			<Navbar />
 			<div className="mx-8">
-				<div>
-					<div className="flex space-y-10">
+				<div className="flex flex-col">
+					<div className="flex flex-col space-y-10">
 						<input
 							type="text"
 							className="w-full box-border pl-6 py-4 bg-gray rounded-full outline-none text-white text-xl placeholder:text-white placeholder:text-xl"
@@ -72,7 +72,11 @@ const Contact = () => {
 					</div>
 				</div>
 				<div>
-					<textarea name="" id="" cols="30" rows="10"></textarea>
+					<textarea
+						name=""
+						className="mt-10 w-full bg-gray px-6 py-4 h-64 rounded-3xl resize-none text-white text-xl placeholder:text-white placeholder:text-xl outline-none"
+						placeholder="What do you want to talk about?"
+					></textarea>
 				</div>
 			</div>
 			<div className="mt-20">
