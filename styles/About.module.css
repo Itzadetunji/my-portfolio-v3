@@ -2,7 +2,7 @@
 	@apply sm:mx-8 lg:mx-8 xl:mx-[60px];
 }
 .servicesContainer {
-	@apply mt-[80px] mx-8;
+	@apply mt-20 mx-8;
 }
 
 .servicesTitle {

@@ -75,12 +75,16 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .sectionTitle {
-	@apply text-[50px] font-[700] text-white;
+	@apply text-5xl font-[700] text-white;
 }
 
 .animate-line {
   position: relative;
   animation: animate-line 5s ease-in-out infinite;
+}
+
+.custom-shadow:hover{
+  filter: drop-shadow(5px 5px 0px #5CBEFF);
 }
 
 @keyframes animate-line {
