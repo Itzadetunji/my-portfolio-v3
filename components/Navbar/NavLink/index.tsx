@@ -6,9 +6,19 @@ import React from "react";
 interface NavItemProps {
 	title: string;
 	path: string;
-	active: boolean;
 }
 
-export const NavLink: React.FC<NavItemProps> = ({ title, path, active }) => {
-	return <div></div>;
+export const NavLink: React.FC<NavItemProps> = ({ title, path }) => {
+	const router = useRouter().pathname;
+	console.log(router);
+	return (
+		<div>
+			<Link
+				href={path}
+				passHref
+			>
+				<h2 className={`text-white ${router === `${path}` ? "font-bold" : "font-regular"}`}>{title}</h2>
+			</Link>
+		</div>
+	);
 };
