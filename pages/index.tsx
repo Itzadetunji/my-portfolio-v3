@@ -4,12 +4,6 @@ import Link from "next/link";
 import { Button, Footer, Navbar, SideSocialLinks, SocialLinks } from "../components";
 
 const Index: NextPage = () => {
-	return (
-		<>
-			<Navbar />
-
-			<Footer />
-		</>
-	);
+	return <></>;
 };
 export default Index;

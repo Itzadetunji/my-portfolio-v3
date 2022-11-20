@@ -7,14 +7,6 @@ import Link from "next/link";
 import { Button, Footer, LargeSocialLinks, Navbar, PortfolioCard, SocialLinks } from "../components";
 
 const Portfolio: NextPage = () => {
-	return (
-		<>
-			{/* <ParticleComponent/> */}
-			<div className="">
-				<Navbar />
-				<Footer />
-			</div>
-		</>
-	);
+	return <></>;
 };
 export default Portfolio;
