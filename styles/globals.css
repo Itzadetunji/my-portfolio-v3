@@ -11,7 +11,7 @@ body {
 	@apply caret-blue;
 }
 
-a {
+/* a {
 	color: inherit;
 	text-decoration: none;
 }
@@ -96,5 +96,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   50% {
     width: 100%;
   }
-}
+} */
 
+.indexBodyImage {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
