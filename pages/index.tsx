@@ -2,11 +2,29 @@ import type { NextPage } from "next";
 // import styles from "../styles/Home.module.css";
 import Link from "next/link";
 // import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Button, Footer, Line, Navbar, SideSocialLinks, SocialLinks } from "../components";
+import Typed from "typed.js";
 
 const Index: NextPage = () => {
+	const el = useRef(null);
+	useEffect(() => {
+		const typed = new Typed(el.current, {
+			strings: ["Hello", "Ciao", "Hola", "Gutentaug"],
+			startDelay: 300,
+			typeSpeed: 300,
+			backSpeed: 200,
+			loop: true,
+			showCursor: false,
+			shuffle: true,
+			autoInsertCss: true,
+		});
+		return () => {
+			typed.destroy();
+		};
+	}, []);
+
 	useEffect(() => {
 		// document.body.style.backgroundImage = `url('/images/background.svg')`;
 		document.body.classList.add("indexBodyImage");
@@ -18,7 +36,9 @@ const Index: NextPage = () => {
 				<Navbar />
 				<section className="container max-w-[1270px] mx-auto flex items-center justify-between">
 					<div className="text-white text-[64px] font-bold mt-5 pt-0 relative">
-						<p className="welcomeText text-[230px] text-gray tracking-[-2%] font-bold opacity-50 ml-[-14px] mt-[-77px] absolute">Hello</p>
+						<p className="welcomeText text-[230px] text-gray tracking-[-2%] font-bold opacity-50 ml-[-14px] mt-[-77px] absolute">
+							<span ref={el}></span>
+						</p>
 						<div className="mt-[197px] max-w-[430px]">
 							<p>
 								I&apos;m <br />
