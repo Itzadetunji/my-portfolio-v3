@@ -11,12 +11,14 @@ const Index: NextPage = () => {
 	const el = useRef(null);
 	useEffect(() => {
 		const typed = new Typed(el.current, {
-			strings: ["Hello", "Ciao", "Hola", "Gutentaug"],
-			startDelay: 300,
-			typeSpeed: 300,
-			backSpeed: 200,
+			strings: ["Hello", "Ciao", "Hola", "Yo"],
+			startDelay: 100,
+			typeSpeed: 100,
+			backSpeed: 150,
+			smartBackspace: true,
 			loop: true,
-			showCursor: false,
+			showCursor: true,
+			cursorChar: "!",
 			shuffle: true,
 			autoInsertCss: true,
 		});
@@ -36,9 +38,9 @@ const Index: NextPage = () => {
 				<Navbar />
 				<section className="container max-w-[1270px] mx-auto flex items-center justify-between">
 					<div className="text-white text-[64px] font-bold mt-5 pt-0 relative">
-						<p className="welcomeText text-[230px] text-gray tracking-[-2%] font-bold opacity-50 ml-[-14px] mt-[-77px] absolute">
+						<div className="welcomeText text-[230px] text-gray tracking-[-2%] font-bold opacity-50 ml-[-14px] mt-[-77px] absolute flex items-center">
 							<span ref={el}></span>
-						</p>
+						</div>
 						<div className="mt-[197px] max-w-[430px]">
 							<p>
 								I&apos;m <br />
@@ -50,7 +52,7 @@ const Index: NextPage = () => {
 						</div>
 						<h2 className="text-white font-light text-2xl mt-5">Fullstack Web Developer</h2>
 						<div className="mt-20 max-w-[550px]">
-							<h2 className="font-regular text-[24px] text-[#959DA9]">Lorem ipsum</h2>
+							<h2 className="font-regular text-[24px] text-[#959DA9]">Cory House</h2>
 							<h2 className="font-regular text-[24px]">&quot;Code is like humor. When you have to explain it, it’s bad.&quot;</h2>
 						</div>
 					</div>

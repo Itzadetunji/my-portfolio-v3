@@ -124,6 +124,12 @@ p {
 	white-space: pre-line;
 }
 
-.welcomeText{
+.welcomeText {
 	mix-blend-mode: screen;
+}
+
+.typed-cursor.typed-cursor--blink {
+	animation: none O 7s Infiniter !important;
+	-webkit-animation: none 6 7s infinite !important;
+	animation: none 0.7s infinite !important;
 }
