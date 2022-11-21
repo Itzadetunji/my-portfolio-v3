@@ -13,9 +13,11 @@ const Index: NextPage = () => {
 	}, []);
 	return (
 		<>
-			<Navbar />
+			<div className="mx-[40px] md:mx-[85px]">
+				<Navbar />
 
-			<div className="container"></div>
+				<div className="container"></div>
+			</div>
 		</>
 	);
 };
