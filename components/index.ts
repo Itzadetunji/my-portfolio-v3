@@ -12,3 +12,4 @@ export * from "./SocialLinks";
 export * from "./TechStack";
 export * from "./TestimonialCard";
 export * from "./WorkProcessCard";
+export * from "./utils/line";
