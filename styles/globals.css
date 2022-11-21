@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("http://fonts.cdnfonts.com/css/circular-std");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html,
 body {
-	font-family: "Circular Std", sans-serif;
+	font-family: "Sofia Pro", sans-serif;
 	@apply caret-blue;
 }
 
@@ -109,17 +109,21 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .squiggle {
-  stroke-dasharray: 450;
-  stroke-dashoffset: 450;
-  animation: draw 2s linear infinite alternate;
+	stroke-dasharray: 450;
+	stroke-dashoffset: 450;
+	animation: draw 2s linear infinite alternate;
 }
 
 @keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
+	to {
+		stroke-dashoffset: 0;
+	}
 }
 
-p{
+p {
 	white-space: pre-line;
+}
+
+.welcomeText{
+	mix-blend-mode: screen;
 }

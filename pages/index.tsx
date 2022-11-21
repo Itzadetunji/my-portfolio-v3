@@ -18,7 +18,13 @@ const Index: NextPage = () => {
 				<Navbar />
 
 				<div className="container">
-					<p className="text-[230px] text-white font-bold">Hello</p>
+					<p className="welcomeText text-[230px] text-white tracking-[-2%] font-bold opacity-50">Hello</p>
+					<div className="text-white text-[64px] font-bold">
+						<p>I&apos;m</p>
+						<p className="">
+							Tunji <span className="text-blue">Adeyinka</span>
+						</p>
+					</div>
 				</div>
 			</div>
 		</>
