@@ -8,15 +8,18 @@ import { Button, Footer, Navbar, SideSocialLinks, SocialLinks } from "../compone
 
 const Index: NextPage = () => {
 	useEffect(() => {
-		document.body.style.backgroundImage = `url('/images/background.svg')`;
+		// document.body.style.backgroundImage = `url('/images/background.svg')`;
 		document.body.classList.add("indexBodyImage");
+		// document.body.classList.add("squiggle");
 	}, []);
 	return (
 		<>
 			<div className="mx-[40px] md:mx-[85px]">
 				<Navbar />
 
-				<div className="container"></div>
+				<div className="container">
+					<p className="text-[230px] text-white font-bold">Hello</p>
+				</div>
 			</div>
 		</>
 	);
