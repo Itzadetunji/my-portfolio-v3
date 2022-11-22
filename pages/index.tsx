@@ -44,7 +44,7 @@ const Index: NextPage = () => {
 						<div className="mt-[197px] max-w-[430px]">
 							<p>
 								I&apos;m <br />
-								Tunji <span className="text-blue">Adeyinka</span>
+								Tunji<span className="text-blue"> Adeyinka</span>
 							</p>
 							<div className="mt-5 w-[200px] h-[7px]">
 								<Line />
