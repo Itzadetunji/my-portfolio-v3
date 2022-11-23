@@ -60,7 +60,7 @@ const Icon: NextPage<IconProps> = ({ name, url }) => {
 				/>
 				<motion.svg
 					className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] -z-10"
-					animate={{ rotate: isHovered ? 90 : 0, y: -27, x: -24 }}
+					animate={{ rotate: isHovered ? 90 : 0, y: -27, x: -24, duration: 1 }}
 					width="48"
 					height="54"
 					viewBox="0 0 48 54"
