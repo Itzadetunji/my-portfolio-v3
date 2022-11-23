@@ -133,3 +133,7 @@ p {
 	-webkit-animation: none 6 7s infinite !important;
 	animation: none 0.7s infinite !important;
 }
+
+.animateIcon:hover .animatePolygon {
+	transform: rotate(30deg);
+}
