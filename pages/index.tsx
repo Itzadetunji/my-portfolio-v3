@@ -53,7 +53,7 @@ const Index: NextPage = () => {
 						<h2 className="text-white font-light text-2xl mt-5">Fullstack Web Developer</h2>
 						<div className="mt-20 max-w-[550px]">
 							<h2 className="font-regular text-[24px] text-[#959DA9]">Cory House</h2>
-							<h2 className="font-regular text-[24px]">&quot;Code is like humor. When you have to explain it, it’s bad.&quot;</h2>
+							<h2 className="font-regular text-[24px]">&quot;Code is like humor. When you have to explain it, it&apos;s bad.&quot;</h2>
 						</div>
 					</div>
 					<div className="bg-blue flex-1 h-[400px] max-w-[400px] "></div>
