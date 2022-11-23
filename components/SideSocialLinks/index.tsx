@@ -1,5 +1,4 @@
-import { NextComponentType, NextPage } from "next";
-import Link from "next/link";
+import { NextPage } from "next";
 import React from "react";
 import { Line } from "../";
 
