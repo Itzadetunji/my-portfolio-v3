@@ -10,7 +10,6 @@ interface NavItemProps {
 
 export const NavLink: React.FC<NavItemProps> = ({ title, path }) => {
 	const router = useRouter().pathname;
-	console.log(router);
 	return (
 		<div>
 			<Link
