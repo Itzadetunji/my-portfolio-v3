@@ -11,11 +11,26 @@ export const SideSocialLinks: NextPage = () => {
 					<Line />
 				</div> */}
 				<div className="flex flex-col space-y-[30px] items-center">
-					<Icon name={"github"} />
-					<Icon name={"facebook"} />
-					<Icon name={"instagram"} />
-					<Icon name={"linkedin"} />
-					<Icon name={"twitter"} />
+					<Icon
+						name={"github"}
+						url={"https://github.com/itzadetunji"}
+					/>
+					<Icon
+						name={"facebook"}
+						url={"https://www.facebook.com/adetunji.adeyinka.1238"}
+					/>
+					<Icon
+						name={"instagram"}
+						url={"https://instagram.com/itzadetunji"}
+					/>
+					<Icon
+						name={"linkedin"}
+						url={"https://linkedin.com/in/itzadetunji"}
+					/>
+					<Icon
+						name={"twitter"}
+						url={"https://twittter.com/itzadetunji1"}
+					/>
 				</div>
 			</div>
 		</>
@@ -24,11 +39,15 @@ export const SideSocialLinks: NextPage = () => {
 
 interface IconProps {
 	name: string;
+	url: string;
 }
 
-const Icon: NextPage<IconProps> = ({ name }) => {
+const Icon: NextPage<IconProps> = ({ name, url }) => {
 	return (
-		<Link href={"https://google.com"}>
+		<a
+			href={url}
+			rel="noopener noreferrer"
+		>
 			<div className="relative w-[54px] h-[54px] flex items-center justify-center cursor-pointer">
 				<img
 					className="w-6 h-6"
@@ -49,6 +68,6 @@ const Icon: NextPage<IconProps> = ({ name }) => {
 					/>
 				</svg>
 			</div>
-		</Link>
+		</a>
 	);
 };
