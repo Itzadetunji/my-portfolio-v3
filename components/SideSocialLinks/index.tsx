@@ -5,10 +5,26 @@ import { Line } from "../";
 
 export const SideSocialLinks: NextPage = () => {
 	return (
-		<div>
-			<div className="mt-5 h-[5px] w-[100px] rotate-90">
-				<Line />
+		<>
+			<div className="flex flex-col">
+				{/* <div className="h-[5px] w-[100px]">
+					<Line />
+				</div> */}
+				<div className="flex flex-col space-y-[30px] items-center">
+					<Icon />
+				</div>
 			</div>
+		</>
+	);
+};
+
+const Icon = () => {
+	return (
+		<div className="bg-light-gray w-[54px] h-[54px] flex items-center justify-center">
+			<img
+				src="./images/social-icons/github.svg"
+				alt=""
+			/>
 		</div>
 	);
 };
