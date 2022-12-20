@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-sync-scripts */
 import { Html, Head, Main, NextScript } from "next/document";
 // import AOS from "@aos";
 

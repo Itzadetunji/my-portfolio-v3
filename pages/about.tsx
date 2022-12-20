@@ -7,10 +7,7 @@ import { Button, ContactMe, Footer, LargeSocialLinks, Line, Navbar, ServiceCard,
 
 const About: NextPage = () => (
 	<>
-		<Line
-			height={""}
-			length={""}
-		/>
+		<Line />
 	</>
 );
 
