@@ -1,36 +1,42 @@
 import { motion } from "framer-motion";
 import { NextPage } from "next";
 import React, { useState } from "react";
-import { Line } from "../";
+// import { Line } from "";
 
-export const SideSocialLinks: NextPage = () => {
+interface SideSocialLinksProps {
+	className: string;
+}
+
+export const SideSocialLinks: NextPage<SideSocialLinksProps> = ({ className }) => {
 	return (
 		<>
-			<div className="flex flex-col">
-				{/* <div className="h-[5px] w-[100px]">
+			<div className={className}>
+				<div className="flex flex-col">
+					{/* <div className="h-[5px] w-[100px]">
 					<Line />
 				</div> */}
-				<div className="flex flex-col space-y-[30px] items-center">
-					<Icon
-						name={"github"}
-						url={"https://github.com/itzadetunji"}
-					/>
-					<Icon
-						name={"facebook"}
-						url={"https://www.facebook.com/adetunji.adeyinka.1238"}
-					/>
-					<Icon
-						name={"instagram"}
-						url={"https://instagram.com/itzadetunji"}
-					/>
-					<Icon
-						name={"linkedin"}
-						url={"https://linkedin.com/in/itzadetunji"}
-					/>
-					<Icon
-						name={"twitter"}
-						url={"https://twittter.com/itzadetunji1"}
-					/>
+					<div className="flex xl:flex-col space-x-5 xl:space-x-0 xl:space-y-[30px] items-center">
+						<Icon
+							name={"github"}
+							url={"https://github.com/itzadetunji"}
+						/>
+						<Icon
+							name={"facebook"}
+							url={"https://www.facebook.com/adetunji.adeyinka.1238"}
+						/>
+						<Icon
+							name={"instagram"}
+							url={"https://instagram.com/itzadetunji"}
+						/>
+						<Icon
+							name={"linkedin"}
+							url={"https://linkedin.com/in/itzadetunji"}
+						/>
+						<Icon
+							name={"twitter"}
+							url={"https://twittter.com/itzadetunji1"}
+						/>
+					</div>
 				</div>
 			</div>
 		</>

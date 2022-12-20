@@ -56,7 +56,7 @@ const Index: NextPage = () => {
 							<h2 className="font-regular text-[24px]">&quot;Code is like humor. When you have to explain it, it&apos;s bad.&quot;</h2>
 						</div>
 					</div>
-					<div className="bg-blue flex-1 h-[400px] max-w-[400px] "></div>
+					<div className="bg-blue flex-1 h-[400px] max-w-[400px]"></div>
 					{/* <div className="relative">
 						<div className="">
 							<img
@@ -78,8 +78,9 @@ const Index: NextPage = () => {
 							</svg>
 						</div>
 					</div> */}
-					<SideSocialLinks />
+					<SideSocialLinks className={"hidden xl:block"} />
 				</section>
+				<SideSocialLinks className={"xl:hidden flex justify-center mt-8"} />
 			</div>
 		</>
 	);
