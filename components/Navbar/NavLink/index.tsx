@@ -16,7 +16,7 @@ export const NavLink: React.FC<NavItemProps> = ({ title, path }) => {
 				href={path}
 				passHref
 			>
-				<h2 className={`text-white t ${router === `${path}` ? "font-bold" : "font-regular"}`}>{title}</h2>
+				<h2 className={`text-white cursor-pointer ${router === `${path}` ? "font-bold" : "font-regular"}`}>{title}</h2>
 			</Link>
 		</div>
 	);
