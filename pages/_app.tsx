@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					rel="stylesheet"
 				></link>
 			</Head>
-			{/* <Navbar /> */}
+			<Navbar />
 			<Component {...pageProps} />
 			<Footer />
 		</>

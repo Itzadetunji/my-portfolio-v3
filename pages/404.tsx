@@ -15,7 +15,7 @@ const NotFoundPage: NextPage = () => {
 				>
 					404
 				</div>
-				<p>Please I want to know. What are you looking for? 👀 </p>
+				<p className="sm:text-xl">Please I want to know. What are you looking for? 👀 </p>
 			</section>
 		</>
 	);
