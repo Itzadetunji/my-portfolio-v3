@@ -12,7 +12,9 @@ export const SmallNavLink: React.FC<SmallNavItemProps> = ({ title, path }) => {
 	const router = useRouter().pathname;
 	return (
 		<Link href={path}>
-			<h2 className={`text-white t ${router === `${path}` ? "font-bold" : "font-regular"}`}>{title}</h2>
+			<div className="relative">
+				<h2 className={`text-white ${router === `${path}` ? "font-bold" : "font-regular"}`}>{title}</h2>
+			</div>
 		</Link>
 	);
 };

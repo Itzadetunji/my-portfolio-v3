@@ -66,14 +66,13 @@ export const Navbar: NextPage = () => {
 					</button>
 				</div>
 			</nav>
-			{/* <SmallNav /> */}
 		</>
 	);
 };
 
 export const SmallNav: NextPage = () => {
 	return (
-		<nav className="bg-red">
+		<nav className="bg-red-900 h-full text-center">
 			<SmallNavLink
 				title={"Home"}
 				path={"/"}
