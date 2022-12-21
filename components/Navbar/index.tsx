@@ -7,7 +7,7 @@ import { NavLink } from "../";
 
 export const Navbar: NextPage = () => {
 	const [isOpen, setIsOpen] = useState(false);
-
+	const [navIcon, setNavIcon] = useState(false);
 	useEffect(() => {
 		if (isOpen == true) {
 			document.body.style.overflow = "hidden";
@@ -19,6 +19,18 @@ export const Navbar: NextPage = () => {
 	return (
 		<nav className="mx-auto max-w-[1272px] py-4">
 			<div className="flex items-center justify-between">
+				{/* <div className="wrapper">
+					<button
+						onClick={() => {
+							setNavIcon(!navIcon);
+						}}
+						className={`nav ${navIcon && "open"}`}
+					>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div> */}
 				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer">
 					<Image
 						src="/images/logo.svg"
