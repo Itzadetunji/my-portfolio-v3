@@ -16,7 +16,7 @@ const NotFoundPage: NextPage = () => {
 					setIsOpen={setIsOpen}
 				/>
 			</section>
-			<SmallNav isOpen={false} />
+			<SmallNav isOpen={isOpen} />
 			<section className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white flex flex-col items-center text-center ">
 				<div
 					title="404"
