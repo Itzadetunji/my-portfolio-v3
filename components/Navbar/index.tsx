@@ -62,9 +62,7 @@ export const Navbar: NextPage<NavProps> = ({ isOpen, setIsOpen }) => {
 				</div>
 				<div className="sm:hidden z-50">
 					<button
-						onClick={() => {
-							setIsOpen(!isOpen);
-						}}
+						onClick={() => setIsOpen(!isOpen)}
 						className={`nav ${isOpen && "open"} scale-[0.75] sm:scale-100 w-16 h-16 relative p-0 bg-transparent border-none outline-none cursor-pointer`}
 					>
 						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
@@ -79,7 +77,7 @@ export const Navbar: NextPage<NavProps> = ({ isOpen, setIsOpen }) => {
 
 export const SmallNav: NextPage<SmallNavProps> = ({ isOpen }) => {
 	return (
-		<div className="fixed left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] z-10 bg-dark h-[100%] w-[100%] sm:hidden">
+		<div className={`fixed left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] z-10 bg-dark h-[100%] w-[100%] ${isOpen ? "block" : "hidden"} sm:hidden`}>
 			<nav className="h-full text-center flex flex-col items-center justify-center space-y-[60px]">
 				<div className="flex flex-col items-center space-y-[50px]">
 					<SmallNavLink
