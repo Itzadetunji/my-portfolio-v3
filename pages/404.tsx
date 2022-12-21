@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useEffect } from "react";
 import "../styles/notFoundPage.module.css";
+import { Navbar } from "../components";
 
 const NotFoundPage: NextPage = () => {
 	useEffect(() => {
@@ -8,6 +9,7 @@ const NotFoundPage: NextPage = () => {
 	}, []);
 	return (
 		<>
+			<Navbar />
 			<section className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white flex flex-col items-center text-center ">
 				<div
 					title="404"

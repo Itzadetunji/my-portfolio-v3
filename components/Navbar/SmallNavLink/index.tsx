@@ -1,22 +1,18 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import React from "react";
-import styles from "../../../styles/Navbar.module.css";
+import { useRouter } from "next/router";
 
 interface SmallNavItemProps {
 	title: string;
 	path: string;
-	active: boolean;
 }
 
-export const SmallNavLink: React.FC<SmallNavItemProps> = ({ title, path, active }) => {
+export const SmallNavLink: React.FC<SmallNavItemProps> = ({ title, path }) => {
+	const router = useRouter().pathname;
 	return (
 		<Link href={path}>
-			<div>
-				<div>
-					<p>{title}</p>
-				</div>
-			</div>
+			<h2 className={`text-white t ${router === `${path}` ? "font-bold" : "font-regular"}`}>{title}</h2>
 		</Link>
 	);
 };

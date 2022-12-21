@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { NavLink } from "../";
+import { NavLink, SmallNavLink } from "../";
 
 export const Navbar: NextPage = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +17,8 @@ export const Navbar: NextPage = () => {
 	}, [isOpen]);
 
 	return (
-		<nav className="mx-auto max-w-[1272px] py-4">
-			<div className="flex items-center justify-between">
+		<>
+			<nav className="flex flex-row items-center justify-center max-w-[1270px] mx-auto py-4">
 				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer">
 					<Image
 						src="/images/logo.svg"
@@ -65,7 +65,19 @@ export const Navbar: NextPage = () => {
 						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
 					</button>
 				</div>
-			</div>
+			</nav>
+			{/* <SmallNav /> */}
+		</>
+	);
+};
+
+export const SmallNav: NextPage = () => {
+	return (
+		<nav className="bg-red">
+			<SmallNavLink
+				title={"Home"}
+				path={"/"}
+			/>
 		</nav>
 	);
 };
