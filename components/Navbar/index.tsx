@@ -19,18 +19,6 @@ export const Navbar: NextPage = () => {
 	return (
 		<nav className="mx-auto max-w-[1272px] py-4">
 			<div className="flex items-center justify-between">
-				{/* <div className="wrapper">
-					<button
-						onClick={() => {
-							setNavIcon(!navIcon);
-						}}
-						className={`nav ${navIcon && "open"}`}
-					>
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-				</div> */}
 				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer">
 					<Image
 						src="/images/logo.svg"
@@ -39,7 +27,7 @@ export const Navbar: NextPage = () => {
 						objectFit="contain"
 					/>
 				</div>
-				<div className="flex space-x-11 justify-self-center">
+				<div className="hidden sm:flex space-x-11 justify-self-center ">
 					<NavLink
 						title={"Home"}
 						path={"/"}
@@ -57,13 +45,25 @@ export const Navbar: NextPage = () => {
 						path={"/contact"}
 					/>
 				</div>
-				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer">
+				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer hidden sm:block">
 					<Image
 						src="/images/headphones.svg"
 						alt="Adetunji's Logo"
 						layout="fill"
 						objectFit="contain"
 					/>
+				</div>
+				<div className="wrapper sm:hidden">
+					<button
+						onClick={() => {
+							setNavIcon(!navIcon);
+						}}
+						className={`nav ${navIcon && "open"} w-16 h-16 relative p-0 bg-transparent border-none outline-none cursor-pointer`}
+					>
+						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
+						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
+						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
+					</button>
 				</div>
 			</div>
 		</nav>
