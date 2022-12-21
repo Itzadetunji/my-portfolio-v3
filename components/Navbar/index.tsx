@@ -18,7 +18,7 @@ export const Navbar: NextPage = () => {
 
 	return (
 		<>
-			<nav className="flex flex-row items-center justify-center max-w-[1270px] mx-auto py-4">
+			<nav className="flex flex-row items-center justify-between max-w-[1270px] mx-auto py-4">
 				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer">
 					<Image
 						src="/images/logo.svg"
