@@ -53,12 +53,12 @@ export const Navbar: NextPage = () => {
 						objectFit="contain"
 					/>
 				</div>
-				<div className="wrapper sm:hidden">
+				<div className="sm:hidden">
 					<button
 						onClick={() => {
 							setNavIcon(!navIcon);
 						}}
-						className={`nav ${navIcon && "open"} w-16 h-16 relative p-0 bg-transparent border-none outline-none cursor-pointer`}
+						className={`nav ${navIcon && "open"} scale-[0.75] sm:scale-100 w-16 h-16 relative p-0 bg-transparent border-none outline-none cursor-pointer`}
 					>
 						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
 						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
