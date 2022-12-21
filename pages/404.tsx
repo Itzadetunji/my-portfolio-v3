@@ -5,11 +5,8 @@ import { Navbar } from "../components";
 
 const NotFoundPage: NextPage = () => {
 	useEffect(() => {
-		// document.body.style.backgroundImage = `url('/images/background.svg')`;
 		document.body.classList.add("notFoundBody");
-		// document.body.classList.add("squiggle");
 	}, []);
-	const [navIcon, setNavIcon] = useState(false);
 	return (
 		<>
 			<section className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white flex flex-col items-center text-center ">
