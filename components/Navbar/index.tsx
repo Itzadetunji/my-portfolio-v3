@@ -2,12 +2,19 @@ import { NextPage } from "next";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { Icon, NavLink, SmallNavLink } from "../";
 
-export const Navbar: NextPage = () => {
-	const [isOpen, setIsOpen] = useState(false);
-	const [navIcon, setNavIcon] = useState(false);
+interface SmallNavProps {
+	isOpen: boolean;
+}
+
+interface NavProps {
+	isOpen: boolean;
+	setIsOpen: Dispatch<SetStateAction<boolean>>;
+}
+
+export const Navbar: NextPage<NavProps> = ({ isOpen, setIsOpen }) => {
 	useEffect(() => {
 		if (isOpen == true) {
 			document.body.style.overflow = "hidden";
@@ -56,9 +63,9 @@ export const Navbar: NextPage = () => {
 				<div className="sm:hidden z-50">
 					<button
 						onClick={() => {
-							setNavIcon(!navIcon);
+							setIsOpen(!isOpen);
 						}}
-						className={`nav ${navIcon && "open"} scale-[0.75] sm:scale-100 w-16 h-16 relative p-0 bg-transparent border-none outline-none cursor-pointer`}
+						className={`nav ${isOpen && "open"} scale-[0.75] sm:scale-100 w-16 h-16 relative p-0 bg-transparent border-none outline-none cursor-pointer`}
 					>
 						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
 						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
@@ -70,7 +77,7 @@ export const Navbar: NextPage = () => {
 	);
 };
 
-export const SmallNav: NextPage = () => {
+export const SmallNav: NextPage<SmallNavProps> = ({ isOpen }) => {
 	return (
 		<div className="fixed left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] z-10 bg-dark h-[100%] w-[100%] sm:hidden">
 			<nav className="h-full text-center flex flex-col items-center justify-center space-y-[60px]">
