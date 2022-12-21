@@ -139,24 +139,10 @@ p {
 }
 
 .notFoundBody {
-	display: flex;
-	width: 100vw;
-	height: 100vh;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
-	background-color: hsl(208, 49%, 8%);
-	color: #fff;
-}
-
-.notFoundContent{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	background-color: hsl(207, 50%, 8%);
 }
 
 .notFoundDiv {
-	letter-spacing: -7px;
 	font-size: 96px;
 	animation: glitch 1s linear infinite;
 }

@@ -6,23 +6,21 @@ import { Navbar } from "../components";
 const NotFoundPage: NextPage = () => {
 	useEffect(() => {
 		// document.body.style.backgroundImage = `url('/images/background.svg')`;
-		// document.body.classList.add("notFoundBody");
+		document.body.classList.add("notFoundBody");
 		// document.body.classList.add("squiggle");
 	}, []);
 	const [navIcon, setNavIcon] = useState(false);
 	return (
 		<>
-			<Navbar />
-			{/* <section className="notFoundBody"> */}
-			<section className="notFoundContent fixed translate-x-[-50%] translate-y-[-50%]">
+			<section className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white flex flex-col items-center text-center ">
 				<div
 					title="404"
-					className="notFoundDiv"
+					className="notFoundDiv text-[96px]"
 				>
 					404
 				</div>
+				<p>Please I want to know. What are you looking for? 👀 </p>
 			</section>
-			{/* </section> */}
 		</>
 	);
 };
