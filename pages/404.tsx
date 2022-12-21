@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "../styles/notFoundPage.module.css";
-import { Navbar } from "../components";
 
 const NotFoundPage: NextPage = () => {
 	useEffect(() => {
