@@ -4,7 +4,7 @@ import Link from "next/link";
 // import Link from "next/link";
 import { SetStateAction, useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Button, Footer, Line, Navbar, SideSocialLinks, SocialLinks } from "../components";
+import { Button, Footer, Line, Navbar, SideSocialLinks, SmallNav, SocialLinks } from "../components";
 import Typed from "typed.js";
 
 const Index: NextPage = () => {
@@ -37,6 +37,7 @@ const Index: NextPage = () => {
 					isOpen={isOpen}
 					setIsOpen={setIsOpen}
 				/>
+				<SmallNav isOpen={isOpen} />
 				<div className="flex flex-row items-center justify-center mb-8 sm:mb-12">
 					<section className="container max-w-[1270px] mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between">
 						<div className="text-white text-[48px] xl:text-[64px] font-bold mt-5 pt-0 relative">
