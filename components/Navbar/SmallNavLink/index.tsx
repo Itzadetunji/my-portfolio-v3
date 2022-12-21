@@ -21,7 +21,7 @@ export const SmallNavLink: NextPage<SmallNavItemProps> = ({ title, path }) => {
 				>
 					{title}
 				</h2>
-				<h2 className={`text-gray text-3xl absolute tracking-[0.05em] left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] ${router === `${path}` ? "font-bold" : "font-regular"}  ${isShown ? "duration-200 tracking-[0.2em] text-5xl ease-in-out" : "tracking-[0.05em] duration-[450ms] ease-in-out"}`}>{title}</h2>
+				<h2 className={`text-gray text-3xl absolute tracking-[0.05em] left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] ${router === `${path}` ? "font-bold" : "font-regular"}  ${isShown ? "duration-200 tracking-[0.2em] scale-[1.6] ease-in-out" : "tracking-[0.05em] duration-[450ms] ease-in-out"}`}>{title}</h2>
 			</div>
 		</Link>
 	);

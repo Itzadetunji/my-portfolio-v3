@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { NavLink, SmallNavLink } from "../";
+import { Icon, NavLink, SmallNavLink } from "../";
 
 export const Navbar: NextPage = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -73,7 +73,7 @@ export const Navbar: NextPage = () => {
 export const SmallNav: NextPage = () => {
 	return (
 		<div className="fixed left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] z-10 bg-dark h-[100%] w-[100%] sm:hidden">
-			<nav className=" h-full text-center flex flex-col items-center justify-center space-y-[60px]">
+			<nav className="h-full text-center flex flex-col items-center justify-center space-y-[60px]">
 				<div className="flex flex-col items-center space-y-[50px]">
 					<SmallNavLink
 						title={"Home"}
@@ -100,6 +100,16 @@ export const SmallNav: NextPage = () => {
 						objectFit="contain"
 					/>
 				</div>
+				<footer className="text-white fixed bottom-5 flex items-center justify-between space-x-5">
+					<Icon
+						name={"github"}
+						url={"https://github.com/itzadetunji"}
+					/>
+					<Icon
+						name={"github"}
+						url={"https://github.com/itzadetunji"}
+					/>
+				</footer>
 			</nav>
 		</div>
 	);

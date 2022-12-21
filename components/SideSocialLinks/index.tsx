@@ -48,7 +48,7 @@ interface IconProps {
 	url: string;
 }
 
-const Icon: NextPage<IconProps> = ({ name, url }) => {
+export const Icon: NextPage<IconProps> = ({ name, url }) => {
 	const [isHovered, setHovered] = useState(false);
 	return (
 		<motion.a
@@ -65,7 +65,7 @@ const Icon: NextPage<IconProps> = ({ name, url }) => {
 					alt=""
 				/>
 				<motion.svg
-					className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] -z-10"
+					className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] -z-10 duration-200"
 					animate={{ rotate: isHovered ? 90 : 0, y: -27, x: -24 }}
 					width="48"
 					height="54"
