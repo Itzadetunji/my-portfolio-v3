@@ -19,7 +19,7 @@ export const Navbar: NextPage = () => {
 	return (
 		<>
 			<nav className="flex flex-row items-center justify-between max-w-[1270px] mx-auto py-4">
-				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer">
+				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer z-50">
 					<Image
 						src="/images/logo.svg"
 						alt="Adetunji's Logo"
@@ -53,7 +53,7 @@ export const Navbar: NextPage = () => {
 						objectFit="contain"
 					/>
 				</div>
-				<div className="sm:hidden">
+				<div className="sm:hidden z-50">
 					<button
 						onClick={() => {
 							setNavIcon(!navIcon);
@@ -72,11 +72,35 @@ export const Navbar: NextPage = () => {
 
 export const SmallNav: NextPage = () => {
 	return (
-		<nav className="bg-red-900 h-full text-center">
-			<SmallNavLink
-				title={"Home"}
-				path={"/"}
-			/>
-		</nav>
+		<div className="fixed left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] z-10 bg-dark h-[100%] w-[100%] sm:hidden">
+			<nav className=" h-full text-center flex flex-col items-center justify-center space-y-[60px]">
+				<div className="flex flex-col items-center space-y-[50px]">
+					<SmallNavLink
+						title={"Home"}
+						path={"/"}
+					/>
+					<SmallNavLink
+						title={"About"}
+						path={"/about"}
+					/>
+					<SmallNavLink
+						title={"Portfolio"}
+						path={"/portfolio"}
+					/>
+					<SmallNavLink
+						title={"Contact"}
+						path={"/contact"}
+					/>
+				</div>
+				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer">
+					<Image
+						src="/images/headphones.svg"
+						alt="Adetunji's Logo"
+						layout="fill"
+						objectFit="contain"
+					/>
+				</div>
+			</nav>
+		</div>
 	);
 };
