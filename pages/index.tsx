@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 // import styles from "../styles/Home.module.css";
 import Link from "next/link";
 // import Link from "next/link";
-import { SetStateAction, useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { Button, Footer, Line, Navbar, SideSocialLinks, SmallNav, SocialLinks } from "../components";
+import { Button, Footer, Line, SideSocialLinks, SocialLinks } from "../components";
 import Typed from "typed.js";
 
 const Index: NextPage = () => {
@@ -26,7 +26,6 @@ const Index: NextPage = () => {
 			typed.destroy();
 		};
 	}, []);
-	const [isOpen, setIsOpen] = useState(false);
 	useEffect(() => {
 		document.body.classList.add("indexBodyImage");
 	}, []);
