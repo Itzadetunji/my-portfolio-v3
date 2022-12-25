@@ -2,8 +2,9 @@ import { NextPage } from "next";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import { Dispatch, SetStateAction, useEffect } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { Icon, NavLink, SmallNavLink } from "../";
+import useSound from "use-sound";
 
 interface SmallNavProps {
 	isOpen: boolean;
@@ -12,6 +13,12 @@ interface SmallNavProps {
 interface NavProps {
 	isOpen: boolean;
 	setIsOpen: Dispatch<SetStateAction<boolean>>;
+}
+
+interface musicIconProps {
+	play: any;
+	stop: any;
+	isPlaying: any;
 }
 
 export const Navbar: NextPage<NavProps> = ({ isOpen, setIsOpen }) => {
@@ -53,12 +60,7 @@ export const Navbar: NextPage<NavProps> = ({ isOpen, setIsOpen }) => {
 					/>
 				</div>
 				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer hidden sm:block">
-					<Image
-						src="/images/headphones.svg"
-						alt="Adetunji's Logo"
-						layout="fill"
-						objectFit="contain"
-					/>
+					<MusicIcon />
 				</div>
 				<div className="sm:hidden z-50">
 					<button
@@ -98,12 +100,7 @@ export const SmallNav: NextPage<SmallNavProps> = ({ isOpen }) => {
 					/>
 				</div>
 				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer">
-					<Image
-						src="/images/headphones.svg"
-						alt="Adetunji's Logo"
-						layout="fill"
-						objectFit="contain"
-					/>
+					<MusicIcon />
 				</div>
 				<footer className="text-white fixed bottom-5 flex items-center justify-between space-x-5">
 					<Icon
@@ -116,6 +113,27 @@ export const SmallNav: NextPage<SmallNavProps> = ({ isOpen }) => {
 					/>
 				</footer>
 			</nav>
+		</div>
+	);
+};
+
+export const MusicIcon: NextPage = () => {
+	const soundUrl = "./music/lofi.mp3";
+	const [play, { stop }] = useSound(soundUrl, { volume: 0.5 });
+	const [isPlaying, setIsPlaying] = useState<boolean>(true);
+	return (
+		<div
+			onClick={() => {
+				setIsPlaying(!isPlaying);
+				isPlaying ? play() : stop();
+			}}
+		>
+			<Image
+				src="/images/headphones.svg"
+				alt="Adetunji's Logo"
+				layout="fill"
+				objectFit="contain"
+			/>
 		</div>
 	);
 };
