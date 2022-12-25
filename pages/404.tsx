@@ -1,13 +1,11 @@
 import type { NextPage } from "next";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "../styles/notFoundPage.module.css";
-import { Navbar, SmallNav } from "../components";
 
 const NotFoundPage: NextPage = () => {
 	useEffect(() => {
 		document.body.classList.add("notFoundBody");
 	}, []);
-	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<>
 			<section className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white flex flex-col items-center text-center ">
