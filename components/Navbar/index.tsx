@@ -15,12 +15,6 @@ interface NavProps {
 	setIsOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-interface musicIconProps {
-	play: any;
-	stop: any;
-	isPlaying: any;
-}
-
 export const Navbar: NextPage<NavProps> = ({ isOpen, setIsOpen }) => {
 	useEffect(() => {
 		if (isOpen == true) {
