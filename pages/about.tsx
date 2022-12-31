@@ -1,29 +1,54 @@
 import { NextPage } from "next";
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/About.module.css";
 import Head from "next/head";
 import { Button, ContactMe, Footer, LargeSocialLinks, Line, Navbar, ServiceCard, SideSocialLinks, SocialLinks, TechStack, TestimonialCard, WorkProcessCard } from "../components";
 import { SectionTitle } from "../components";
 
-const About: NextPage = () => (
-	<>
-		{/* <Line /> */}
-		<div className="mx-[40px] sm:mx-[50px] xl:mx-[85px]">
-			<section className="mt-12 text-white">
-				<SectionTitle text={"About Me"} />
-				<div className="pt-16 flex space-x-[60px] justify-between">
-					<div className="flex-1 bg-gray" />
-					<div>
-						<h1 className="font-bold my-8">I&apos;m a FULL-STACK DEVELOPER</h1>
+interface AboutMeState {
+	selectedState: string;
+}
+
+const About: NextPage = () => {
+	const [selectedState, setSelectedState] = useState<number>(1);
+	return (
+		<>
+			{/* <Line /> */}
+			<div className="mx-[40px] sm:mx-[50px] xl:mx-[85px]">
+				<section className="mt-12 text-white">
+					<SectionTitle text={"About Me"} />
+					<div className="pt-16 flex space-x-[60px]">
+						<div className="flex-1 bg-gray max-w-[525px]" />
+						<div className="flex flex-1 justify-between items-center">
+							<h1 className="text-[32px] font-bold my-8">I&apos;m a FULL-STACK DEVELOPER</h1>
+							<div className="flex justify-between items-center h-5">
+								{/* <div className="relative border-white border rounded-full w-[17px] h-[17px]"> */}
+								<AboutMeState selectedState={""} />
+								{/* </div> */}
+								<hr className="bg-white flex-1 h-[1px] min-w-[24px]" />
+								<AboutMeState selectedState={""} />
+								<hr className="bg-white flex-1 h-[1px] min-w-[24px]" />
+								<AboutMeState selectedState={""} />
+							</div>
+						</div>
 					</div>
-					<div className="flex justify-between items-center min-w-[106px]">
-						d
-						<hr className="bg-white grow h-[1px]" />d
-					</div>
-				</div>
-			</section>
-		</div>
-	</>
-);
+				</section>
+			</div>
+		</>
+	);
+};
 
 export default About;
+
+const AboutMeState: NextPage<AboutMeState> = ({ selectedState }) => {
+	return (
+		<>
+			{/* <div className="absolute bg-white rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div> */}
+			<input
+				type="radio"
+				className="w-[17px] h-[17px] bg-transparent cursor-pointer"
+				checked={selectedState === "Male"}
+			></input>
+		</>
+	);
+};
