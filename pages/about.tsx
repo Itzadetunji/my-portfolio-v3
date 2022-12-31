@@ -6,7 +6,10 @@ import { Button, ContactMe, Footer, LargeSocialLinks, Line, Navbar, ServiceCard,
 
 const About: NextPage = () => (
 	<>
-		<Line />
+		{/* <Line /> */}
+		<div>
+			
+		</div>
 	</>
 );
 

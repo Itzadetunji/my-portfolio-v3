@@ -49,7 +49,7 @@ interface IconProps {
 }
 
 export const Icon: NextPage<IconProps> = ({ name, url }) => {
-	const [isHovered, setHovered] = useState(false);
+	const [isHovered, setHovered] = useState<boolean>(false);
 	return (
 		<motion.a
 			href={url}
