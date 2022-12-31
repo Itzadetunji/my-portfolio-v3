@@ -1,16 +1,16 @@
 import { NextPage } from "next";
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction, useState } from "react";
 import styles from "../styles/About.module.css";
 import Head from "next/head";
 import { Button, ContactMe, Footer, LargeSocialLinks, Line, Navbar, ServiceCard, SideSocialLinks, SocialLinks, TechStack, TestimonialCard, WorkProcessCard } from "../components";
 import { SectionTitle } from "../components";
 
-interface AboutMeState {
-	selectedState: string;
+interface AboutMeStateProps {
+	selectedState: any;
 }
 
 const About: NextPage = () => {
-	const [selectedState, setSelectedState] = useState<number>(1);
+	const [selectedState, setSelectedState] = useState();
 	return (
 		<>
 			{/* <Line /> */}
@@ -22,13 +22,11 @@ const About: NextPage = () => {
 						<div className="flex flex-1 justify-between items-center">
 							<h1 className="text-[32px] font-bold my-8">I&apos;m a FULL-STACK DEVELOPER</h1>
 							<div className="flex justify-between items-center h-5">
-								{/* <div className="relative border-white border rounded-full w-[17px] h-[17px]"> */}
-								<AboutMeState selectedState={""} />
-								{/* </div> */}
+								<AboutMeState selectedState={1} />
 								<hr className="bg-white flex-1 h-[1px] min-w-[24px]" />
-								<AboutMeState selectedState={""} />
+								<AboutMeState selectedState={2} />
 								<hr className="bg-white flex-1 h-[1px] min-w-[24px]" />
-								<AboutMeState selectedState={""} />
+								<AboutMeState selectedState={3} />
 							</div>
 						</div>
 					</div>
@@ -40,15 +38,15 @@ const About: NextPage = () => {
 
 export default About;
 
-const AboutMeState: NextPage<AboutMeState> = ({ selectedState }) => {
+const AboutMeState: NextPage<AboutMeStateProps> = ({ selectedState }) => {
+	// console.log(aboutSelectedState && selectedState);
+	const defaultState = selectedState;
+	console.log(defaultState);
 	return (
 		<>
-			{/* <div className="absolute bg-white rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div> */}
-			<input
-				type="radio"
-				className="w-[17px] h-[17px] bg-transparent cursor-pointer"
-				checked={selectedState === "Male"}
-			></input>
+			<div className="relative border-white border rounded-full w-[17px] h-[17px]">
+				<div className={`absolute rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}></div>
+			</div>
 		</>
 	);
 };
