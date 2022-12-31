@@ -8,6 +8,9 @@ module.exports = {
 				gray: "#363C42",
 				"light-gray": "#363C42",
 			},
+			fontFamily: {
+				Inter: ["Inter", "sans-serif"],
+			},
 		},
 	},
 	plugins: [],

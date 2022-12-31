@@ -6,6 +6,7 @@ export * from "./Navbar";
 export * from "./Navbar/NavLink";
 export * from "./Navbar/SmallNavLink";
 export * from "./PortfolioCard";
+export * from "./SectionTitle";
 export * from "./ServiceCard";
 export * from "./SideSocialLinks";
 export * from "./SocialLinks";
