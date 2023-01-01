@@ -10,7 +10,7 @@ interface AboutMeStateProps {
 }
 
 const About: NextPage = () => {
-	const [selectedState, setSelectedState] = useState();
+	// const [selectedState, setSelectedState] = useState();
 	return (
 		<>
 			{/* <Line /> */}
