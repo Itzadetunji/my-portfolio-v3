@@ -39,7 +39,6 @@ const About: NextPage = () => {
 export default About;
 
 const AboutMeState: NextPage<AboutMeStateProps> = ({ selectedState }) => {
-	// console.log(aboutSelectedState && selectedState);
 	const defaultState = selectedState;
 	console.log(defaultState);
 	return (
