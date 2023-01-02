@@ -26,7 +26,7 @@ export const Navbar: NextPage<NavProps> = ({ isOpen, setIsOpen }) => {
 
 	return (
 		<>
-			<nav className="flex flex-row items-center justify-between max-w-[1270px] mx-auto py-4 sticky top-0">
+			<nav className="flex flex-row items-center justify-between max-w-[1270px] mx-auto py-4">
 				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer z-50">
 					<Image
 						src="/images/logo.svg"
