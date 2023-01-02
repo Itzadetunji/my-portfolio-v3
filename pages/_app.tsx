@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					rel="stylesheet"
 				></link>
 			</Head>
-			<div className="mx-[40px] sm:mx-[50px] xl:mx-[85px]">
+			<div className="mx-5 sm:mx-[50px] xl:mx-[85px]">
 				<Navbar
 					isOpen={isOpen}
 					setIsOpen={setIsOpen}
