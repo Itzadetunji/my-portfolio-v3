@@ -10,7 +10,7 @@ interface AboutMeStateProps {
 }
 
 const About: NextPage = () => {
-	// const [selectedState, setSelectedState] = useState();
+	const [selectedState, setSelectedState] = useState<number>(1);
 	return (
 		<>
 			{/* <Line /> */}
@@ -22,11 +22,26 @@ const About: NextPage = () => {
 						<div className="flex flex-1 justify-between items-center">
 							<h1 className="text-[32px] font-bold my-8">I&apos;m a FULL-STACK DEVELOPER</h1>
 							<div className="flex justify-between items-center h-5">
-								<AboutMeState selectedState={1} />
+								<div
+									className="relative border-white border rounded-full w-[17px] h-[17px] cursor-pointer"
+									onClick={() => setSelectedState(1)}
+								>
+									<div className={`absolute rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 ${selectedState === 1 ? "bg-white duration-[500ms] ease-in-out opacity-100" : "duration-[500ms] opacity-0 ease-in-out"}`}></div>
+								</div>
 								<hr className="bg-white flex-1 h-[1px] min-w-[24px]" />
-								<AboutMeState selectedState={2} />
+								<div
+									className="relative border-white border rounded-full w-[17px] h-[17px] cursor-pointer"
+									onClick={() => setSelectedState(2)}
+								>
+									<div className={`absolute rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 ${selectedState === 2 ? "bg-white duration-[500ms] ease-in-out opacity-100" : "duration-[500ms] opacity-0 ease-in-out"}`}></div>
+								</div>
 								<hr className="bg-white flex-1 h-[1px] min-w-[24px]" />
-								<AboutMeState selectedState={3} />
+								<div
+									className="relative border-white border rounded-full w-[17px] h-[17px] cursor-pointer"
+									onClick={() => setSelectedState(3)}
+								>
+									<div className={`absolute rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 ${selectedState === 3 ? "bg-white duration-[500ms] ease-in-out opacity-100" : "duration-[500ms] opacity-0 ease-in-out"}`}></div>
+								</div>
 							</div>
 						</div>
 					</div>
