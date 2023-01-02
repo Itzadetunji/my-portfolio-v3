@@ -14,38 +14,48 @@ const About: NextPage = () => {
 	return (
 		<>
 			{/* <Line /> */}
-			<div className="mx-[40px] sm:mx-[50px] xl:mx-[85px]">
-				<section className="mt-12 text-white">
-					<SectionTitle text={"About Me"} />
-					<div className="pt-16 flex space-x-[60px]">
-						<div className="flex-1 bg-gray max-w-[525px]" />
-						<div className="flex flex-1 justify-between items-center">
-							<h1 className="text-[32px] font-bold my-8">I&apos;m a FULL-STACK DEVELOPER</h1>
-							<div className="flex justify-between items-center h-5">
-								<div
-									className="relative border-white border rounded-full w-[17px] h-[17px] cursor-pointer"
-									onClick={() => setSelectedState(1)}
-								>
-									<div className={`absolute rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 ${selectedState === 1 ? "bg-white duration-[500ms] ease-in-out opacity-100" : "duration-[500ms] opacity-0 ease-in-out"}`}></div>
+			<div className="flex justify-center">
+				<div className="mx-[40px] sm:mx-[50px] xl:mx-[85px] max-w-[1275px]">
+					<section className="mt-12 text-white">
+						<SectionTitle text={"About Me"} />
+						<div className="pt-16 flex items-center space-x-[60px]">
+							<div className="flex-1 bg-gray max-w-[525px] min-h-[400px] rounded-md" />
+							<div className="flex flex-col flex-1">
+								<div className="flex items-center justify-between">
+									<h1 className="text-[32px] font-bold my-8">I&apos;m a FULL-STACK DEVELOPER</h1>
+									<div className="flex justify-between items-center h-5">
+										<div
+											className="relative border-white border rounded-full w-[17px] h-[17px] cursor-pointer"
+											onClick={() => setSelectedState(1)}
+										>
+											<div className={`absolute rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 ${selectedState === 1 ? "bg-white duration-[500ms] ease-in-out opacity-100" : "duration-[500ms] opacity-0 ease-in-out"}`}></div>
+										</div>
+										<hr className="bg-white flex-1 h-[1px] min-w-[24px]" />
+										<div
+											className="relative border-white border rounded-full w-[17px] h-[17px] cursor-pointer"
+											onClick={() => setSelectedState(2)}
+										>
+											<div className={`absolute rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 ${selectedState === 2 ? "bg-white duration-[500ms] ease-in-out opacity-100" : "duration-[500ms] opacity-0 ease-in-out"}`}></div>
+										</div>
+										<hr className="bg-white flex-1 h-[1px] min-w-[24px]" />
+										<div
+											className="relative border-white border rounded-full w-[17px] h-[17px] cursor-pointer"
+											onClick={() => setSelectedState(3)}
+										>
+											<div className={`absolute rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 ${selectedState === 3 ? "bg-white duration-[500ms] ease-in-out opacity-100" : "duration-[500ms] opacity-0 ease-in-out"}`}></div>
+										</div>
+									</div>
 								</div>
-								<hr className="bg-white flex-1 h-[1px] min-w-[24px]" />
-								<div
-									className="relative border-white border rounded-full w-[17px] h-[17px] cursor-pointer"
-									onClick={() => setSelectedState(2)}
-								>
-									<div className={`absolute rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 ${selectedState === 2 ? "bg-white duration-[500ms] ease-in-out opacity-100" : "duration-[500ms] opacity-0 ease-in-out"}`}></div>
-								</div>
-								<hr className="bg-white flex-1 h-[1px] min-w-[24px]" />
-								<div
-									className="relative border-white border rounded-full w-[17px] h-[17px] cursor-pointer"
-									onClick={() => setSelectedState(3)}
-								>
-									<div className={`absolute rounded-full w-2.5 h-2.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 ${selectedState === 3 ? "bg-white duration-[500ms] ease-in-out opacity-100" : "duration-[500ms] opacity-0 ease-in-out"}`}></div>
-								</div>
+								<article>
+									<p className="text-lg">
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quibusdam quos! Provident, sapiente cupiditate nisi quaerat consectetur quod. Magnam, accusamus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quibusdam quos! Provident, sapiente cupiditate nisi quaerat consectetur quod. Magnam, accusamus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Fugit, quibusdam quos! Provident, sapiente cupiditate nisi quaerat consectetur quod. Magnam,
+									</p>
+								</article>
 							</div>
 						</div>
-					</div>
-				</section>
+					</section>
+				</div>
 			</div>
 		</>
 	);
