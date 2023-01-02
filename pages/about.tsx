@@ -11,6 +11,12 @@ const About: NextPage = () => {
 	const [selectedState, setSelectedState] = useState<number>(1);
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
+	const stackIconList = [
+		{ name: "React", path: "/icons/stack-icons/react.svg" },
+		{ name: "Tailwindcss", path: "/icons/stack-icons/tailwind.svg" },
+		{ name: "Javascript", path: "/icons/stack-icons/javascript.svg" },
+		{ name: "Vue", path: "/icons/stack-icons/vue.svg" },
+	];
 	return (
 		<>
 			<section className="flex flex-col mt-12">
@@ -20,7 +26,7 @@ const About: NextPage = () => {
 						<div className="bg-gray w-full sm:w-[80%] md:max-w-[525px] h-[200px] sm:h-[400px] rounded-md" />
 						<div className="flex flex-col min-w-[50%] self-stretch justify-between space-y-5 lg:space-y-0">
 							<div className="flex items-center justify-between">
-								<h1 className="text-[32px] font-bold my-8 text-white leading-[45px]">I&apos;m a FULL-STACK DEVELOPER</h1>
+								<h1 className="text-3xl sm:text-[32px] font-bold my-8 text-white leading-[45px]">I&apos;m a FULL-STACK DEVELOPER</h1>
 								<div className="flex justify-between items-center h-5">
 									<div
 										className="relative border-white border rounded-full w-[17px] h-[17px] cursor-pointer"
@@ -46,14 +52,13 @@ const About: NextPage = () => {
 							</div>
 							<article
 								ref={ref}
-								className="text-white min-h-fit lg:min-h-[200px] max-w-[680px]"
+								className="text-white text-base sm:text-lg min-h-fit lg:min-h-[200px] max-w-[680px]"
 							>
 								{selectedState === 1 && (
 									<motion.p
 										initial={{ opacity: 0, y: 40 }}
 										animate={{ opacity: isInView && 1, y: isInView && 0 }}
 										transition={{ y: { duration: 0.4 }, delay: isInView && 0.1 }}
-										className="text-lg"
 									>
 										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quibusdam quos! Provident, sapiente cupiditate nisi quaerat consectetur quod. Magnam, accusamus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quibusdam quos! Provident, sapiente cupiditate nisi quaerat consectetur quod. Magnam, accusamus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
 										Fugit, quibusdam quos! Provident, sapiente cupiditate nisi quaerat consectetur quod. Magnam,
@@ -64,7 +69,6 @@ const About: NextPage = () => {
 										initial={{ opacity: 0, y: 40 }}
 										animate={{ opacity: isInView && 1, y: isInView && 0 }}
 										transition={{ y: { duration: 0.4 }, delay: isInView && 0.1 }}
-										className="text-lg"
 									>
 										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quibusdam quos! Provident, sapiente cupiditate nisi quaerat consectetur quod. Magnam, accusamus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quibusdam quos! Provident, sapiente cupiditate nisi quaerat consectetur quod. Magnam, accusamus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
 										Fugit, quibusdam quos! Provident, sapiente cupiditate nisi quaerat consectetur quod. Magnam,
@@ -75,7 +79,6 @@ const About: NextPage = () => {
 										initial={{ opacity: 0, y: 40 }}
 										animate={{ opacity: isInView && 1, y: isInView && 0 }}
 										transition={{ y: { duration: 0.4 }, delay: isInView && 0.1 }}
-										className="text-lg"
 									>
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quas modi temporibus officiis nobis eveniet at dolores tenetur expedita fugit?
 									</motion.p>
@@ -91,15 +94,37 @@ const About: NextPage = () => {
 			<section className="flex flex-col mt-40 mx-5 sm:mx-[50px] xl:mx-[85px]">
 				<SectionTitle text={"My Tech Stack"} />
 				<div className="flex flex-col items-center">
-					<div className="flex flex-col lg:flex-row pt-12">
-						<p className="text-xl text-white min-w-[50%]">Here are some of the technological advancements that have a place in my heart 😊</p>
+					<div className="flex flex-col items-center lg:flex-row pt-12">
+						<article className="flex flex-col space-y-10">
+							<p className="text-xl text-white min-w-[50%]">Here are some of the technological advancements that have a place in my heart 😊</p>
+							<figure className="overflow-hidden ">
+								<figcaption className="text-white">Frontend:</figcaption>
+								<div className="flex space-x-7 techStackCarousel1 relative">
+									<img
+										src="/icons/stack-icons/javascript.svg"
+										className="w-20 h-20 mt-4 rounded-md"
+										alt=""
+									/>
+								</div>
+							</figure>
+							<figure>
+								<figcaption className="text-white">Frontend:</figcaption>
+								<div className="flex space-x-7">
+									<img
+										src="/icons/stack-icons/javascript.svg"
+										className="w-20 h-20 mt-4 rounded-md"
+										alt=""
+									/>
+								</div>
+							</figure>
+						</article>
 						<svg
 							width="557"
 							height="596"
 							viewBox="0 0 557 596"
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"
-							className="min-w-[50%]"
+							className="w-full md:max-w-[50%]"
 						>
 							<g clipPath="url(#clip0_1378_355)">
 								<g filter="url(#filter0_d_1378_355)">
