@@ -1,9 +1,6 @@
 import { NextPage } from "next";
-import React, { Dispatch, SetStateAction, useRef, useState } from "react";
-import styles from "../styles/About.module.css";
-import Head from "next/head";
-import { Button, ContactMe, Footer, LargeSocialLinks, Line, Navbar, ServiceCard, SideSocialLinks, SocialLinks, TechStack, TestimonialCard, WorkProcessCard } from "../components";
-import { motion, AnimatePresence, useInView } from "framer-motion";
+import React, { useRef, useState } from "react";
+import { motion, useInView } from "framer-motion";
 import { SectionTitle } from "../components";
 
 interface AboutMeStateProps {
@@ -16,14 +13,13 @@ const About: NextPage = () => {
 	const isInView = useInView(ref, { once: true });
 	return (
 		<>
-			{/* <Line /> */}
 			<div className="flex justify-center">
 				<div className="mx-[40px] sm:mx-[50px] xl:mx-[85px] max-w-[1275px]">
 					<section className="mt-12 text-white">
 						<SectionTitle text={"About Me"} />
 						<div className="pt-16 flex items-center space-x-[60px] justify-between">
 							<div className="flex-1 bg-gray max-w-[525px] min-h-[400px] rounded-md" />
-							<div className="flex flex-col flex-1 ">
+							<div className="flex flex-col flex-1">
 								<div className="flex items-center justify-between">
 									<h1 className="text-[32px] font-bold my-8">I&apos;m a FULL-STACK DEVELOPER</h1>
 									<div className="flex justify-between items-center h-5">
@@ -95,7 +91,6 @@ const About: NextPage = () => {
 							</div>
 						</div>
 					</section>
-					lorem5000
 				</div>
 			</div>
 		</>
