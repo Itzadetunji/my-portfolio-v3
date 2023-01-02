@@ -41,7 +41,7 @@ const Index: NextPage = () => {
 					<div className="flex flex-row items-center justify-center mb-8 sm:mb-12">
 						<section className="container max-w-[1270px] mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between">
 							<div className="text-white text-[48px] xl:text-[64px] font-bold mt-5 pt-0 relative">
-								{/* <div className="bg-blue h-[200px] md:h-[300px] md:max-w-[300px] mx-auto lg:hidden mt-[70px]"></div> */}
+								{/* <div className="bg-blue -[200px] md:h-[300px] md:max-w-[300px] mx-auto lg:hidden mt-[70px]"></div> */}
 								<div className="lg:mt-[197px] max-w-[430px]">
 									<p>
 										I&apos;m <br />
