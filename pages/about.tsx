@@ -16,9 +16,9 @@ const About: NextPage = () => {
 			<section className="flex flex-col mt-12">
 				<SectionTitle text={"About Me"} />
 				<div className="mt-12 flex flex-col items-center mx-[40px] sm:mx-[50px] xl:mx-[85px]">
-					<div className="flex flex-col items-center justify-between space-x-14 md:flex-row w-full max-w-[1275px]">
-						<div className="bg-gray w-full md:max-w-[525px] h-[400px] rounded-md" />
-						<div className="flex flex-col min-w-[50%] h-[400px] justify-between">
+					<div className="flex flex-col items-center justify-between lg:space-x-14 lg:flex-row w-full max-w-[1275px]">
+						<div className="bg-gray w-full sm:w-[80%] md:max-w-[525px] h-[400px] rounded-md" />
+						<div className="flex flex-col min-w-[50%] self-stretch justify-between space-y-5 lg:space-y-0">
 							<div className="flex items-center justify-between">
 								<h1 className="text-[32px] font-bold my-8 text-white leading-[45px]">I&apos;m a FULL-STACK DEVELOPER</h1>
 								<div className="flex justify-between items-center h-5">
@@ -46,7 +46,7 @@ const About: NextPage = () => {
 							</div>
 							<article
 								ref={ref}
-								className="text-white min-h-[200px] max-w-[680px]"
+								className="text-white min-h-fit lg:min-h-[200px] max-w-[680px]"
 							>
 								{selectedState === 1 && (
 									<motion.p
