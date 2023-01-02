@@ -17,9 +17,9 @@ const About: NextPage = () => {
 				<div className="mx-[40px] sm:mx-[50px] xl:mx-[85px] max-w-[1275px]">
 					<section className="mt-12 text-white">
 						<SectionTitle text={"About Me"} />
-						<div className="pt-16 flex items-center space-x-[60px] justify-between">
-							<div className="flex-1 bg-gray max-w-[525px] min-h-[400px] rounded-md" />
-							<div className="flex flex-col flex-1">
+						<div className="pt-16 flex flex-col items-center justify-between gap-14 md:flex-row">
+							<div className="bg-gray w-full md:max-w-[525px] h-[400px] rounded-md" />
+							<div className="flex flex-col min-w-[50%]">
 								<div className="flex items-center justify-between">
 									<h1 className="text-[32px] font-bold my-8">I&apos;m a FULL-STACK DEVELOPER</h1>
 									<div className="flex justify-between items-center h-5">
@@ -74,7 +74,7 @@ const About: NextPage = () => {
 											transition={{ y: { duration: 0.4 }, delay: isInView && 0.1 }}
 											className="text-lg"
 										>
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quas modi temporibus officiis nobis eveniet at dolores tenetur expedita fugit?
+											Lorem ipsum dolor sit amet consectetur adipisicing e
 										</motion.p>
 									)}
 									{selectedState === 3 && (
