@@ -42,8 +42,8 @@ const About: NextPage = () => {
 	];
 	return (
 		<>
-			<section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-40">
-				<div className="w-full max-w-[1275px]">
+			<section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-20">
+				<div className="flex flex-col space-y-12 w-full max-w-[1275px]">
 					<SectionTitle text={"About Me"} />
 					<div className="flex flex-col items-center justify-between lg:space-x-14 lg:flex-row min-w-full">
 						<div className="bg-gray w-full sm:w-[80%] md:max-w-[525px] h-[200px] sm:h-[400px] rounded-md" />
@@ -115,9 +115,9 @@ const About: NextPage = () => {
 				</div>
 			</section>
 			<section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-40">
-				<div className="w-full max-w-[1275px]">
+				<div className="flex flex-col space-y-12 w-full max-w-[1275px]">
 					<SectionTitle text={"My Tech Stack"} />
-					<div className="flex flex-col justify-center items-center lg:flex-row lg:space-x-10 pt-12 w-full">
+					<div className="flex flex-col justify-center items-center lg:flex-row lg:space-x-10 w-full">
 						<article className="flex flex-col space-y-10">
 							<p className="text-xl text-white min-w-[50%]">Here are some of the technological advancements that have a place in my heart 😊</p>
 							<figure className="overflow-hidden -mx-10 xs:mx-0">
