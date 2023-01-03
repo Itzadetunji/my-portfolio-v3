@@ -14,13 +14,31 @@ const About: NextPage = () => {
 	const FEStackIconList = [
 		{ name: "React", path: "/icons/stack-icons/react.svg" },
 		{ name: "Next", path: "/icons/stack-icons/next.svg" },
-		{ name: "Tailwindcss", path: "/icons/stack-icons/tailwind.svg" },
+		{ name: "Tailwindcss", path: "/icons/stack-icons/tailwindcss.svg" },
 		{ name: "Javascript", path: "/icons/stack-icons/javascript.svg" },
 		{ name: "Vue", path: "/icons/stack-icons/vue.svg" },
 		{ name: "React", path: "/icons/stack-icons/react.svg" },
 		{ name: "Next", path: "/icons/stack-icons/next.svg" },
-		{ name: "Tailwindcss", path: "/icons/stack-icons/tailwind.svg" },
+		{ name: "Tailwindcss", path: "/icons/stack-icons/tailwindcss.svg" },
 		{ name: "Javascript", path: "/icons/stack-icons/javascript.svg" },
+		{ name: "React", path: "/icons/stack-icons/react.svg" },
+		{ name: "Next", path: "/icons/stack-icons/next.svg" },
+		{ name: "Tailwindcss", path: "/icons/stack-icons/tailwindcss.svg" },
+		{ name: "Javascript", path: "/icons/stack-icons/javascript.svg" },
+	];
+	const BEStackIconList = [
+		{ name: "Node", path: "/icons/stack-icons/node.svg" },
+		{ name: "Mongodb", path: "/icons/stack-icons/mongodb.svg" },
+		{ name: "Express js", path: "/icons/stack-icons/express.svg" },
+		{ name: "Postman", path: "/icons/stack-icons/postman.svg" },
+		{ name: "MySQL", path: "/icons/stack-icons/mysql.svg" },
+		{ name: "Node", path: "/icons/stack-icons/node.svg" },
+		{ name: "Mongodb", path: "/icons/stack-icons/mongodb.svg" },
+		{ name: "Express js", path: "/icons/stack-icons/express.svg" },
+		{ name: "Postman", path: "/icons/stack-icons/postman.svg" },
+		{ name: "MySQL", path: "/icons/stack-icons/mysql.svg" },
+		{ name: "Node", path: "/icons/stack-icons/node.svg" },
+		{ name: "Mongodb", path: "/icons/stack-icons/mongodb.svg" },
 	];
 	return (
 		<>
@@ -98,31 +116,54 @@ const About: NextPage = () => {
 			</section>
 			<section className="flex flex-col mt-40 mx-5 sm:mx-[50px] xl:mx-[85px]">
 				<SectionTitle text={"My Tech Stack"} />
-				<div className="flex flex-col items-center">
-					<div className="flex flex-col items-center lg:flex-row pt-12">
+				<div className="flex flex-col items-center mt-12 ">
+					<div className="flex flex-col items-center justify-center lg:flex-row pt-12">
 						<article className="flex flex-col space-y-10">
 							<p className="text-xl text-white min-w-[50%]">Here are some of the technological advancements that have a place in my heart 😊</p>
-							<figure className="overflow-hidden ">
-								<figcaption className="text-white">Frontend:</figcaption>
+							<figure className="overflow-hidden -mx-10 xs:mx-0">
+								<figcaption className="text-white mx-10 xs:mx-0">Frontend:</figcaption>
 								<div className="flex space-x-7 techStackCarousel1 relative">
+									{FEStackIconList.slice(0, 5).map((stack, index) => (
+										<img
+											src={stack.path}
+											className="w-20 h-20 mt-4 rounded-md hidden md:block"
+											alt={stack.name}
+											key={index}
+											title={stack.name}
+										/>
+									))}
 									{FEStackIconList.map((stack, index) => (
 										<img
 											src={stack.path}
-											className="w-20 h-20 mt-4 rounded-md"
+											className="w-20 h-20 mt-4 rounded-md md:hidden"
 											alt={stack.name}
 											key={index}
+											title={stack.name}
 										/>
 									))}
 								</div>
 							</figure>
-							<figure>
-								<figcaption className="text-white">Frontend:</figcaption>
-								<div className="flex space-x-7">
-									<img
-										src="/icons/stack-icons/javascript.svg"
-										className="w-20 h-20 mt-4 rounded-md"
-										alt=""
-									/>
+							<figure className="overflow-hidden -mx-10 xs:mx-0">
+								<figcaption className="text-white mx-10 xs:mx-0">Backend:</figcaption>
+								<div className="flex space-x-7 techStackCarousel1 relative">
+									{BEStackIconList.slice(0, 5).map((stack, index) => (
+										<img
+											src={stack.path}
+											className="w-20 h-20 mt-4 rounded-md hidden md:block"
+											alt={stack.name}
+											key={index}
+											title={stack.name}
+										/>
+									))}
+									{BEStackIconList.map((stack, index) => (
+										<img
+											src={stack.path}
+											className="w-20 h-20 mt-4 rounded-md md:hidden"
+											alt={stack.name}
+											key={index}
+											title={stack.name}
+										/>
+									))}
 								</div>
 							</figure>
 						</article>
