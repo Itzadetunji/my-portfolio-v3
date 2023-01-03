@@ -340,12 +340,23 @@ p {
 		left: 0;
 	}
 	100% {
-		left: -450px;
+		left: -550px;
+	}
+}
+@keyframes techStackCarouselAnimation2 {
+	0% {
+		right: 550px;
+	}
+	100% {
+		right: 0;
 	}
 }
 
 @media only screen and (max-width: 768px) {
 	.techStackCarousel1 {
 		animation: techStackCarouselAnimation1 7s linear infinite;
+	}
+	.techStackCarousel2 {
+		animation: techStackCarouselAnimation2 7s linear infinite;
 	}
 }
