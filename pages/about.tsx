@@ -42,10 +42,10 @@ const About: NextPage = () => {
 	];
 	return (
 		<>
-			<section className="flex flex-col mt-12">
-				<SectionTitle text={"About Me"} />
-				<div className="mt-12 flex flex-col items-center mx-5 sm:mx-[50px] xl:mx-[85px]">
-					<div className="flex flex-col items-center justify-between lg:space-x-14 lg:flex-row w-full max-w-[1275px]">
+			<section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-40">
+				<div className="w-full max-w-[1275px]">
+					<SectionTitle text={"About Me"} />
+					<div className="flex flex-col items-center justify-between lg:space-x-14 lg:flex-row min-w-full">
 						<div className="bg-gray w-full sm:w-[80%] md:max-w-[525px] h-[200px] sm:h-[400px] rounded-md" />
 						<div className="flex flex-col min-w-[50%] self-stretch justify-between space-y-5 lg:space-y-0">
 							<div className="flex items-center justify-between">
@@ -114,10 +114,10 @@ const About: NextPage = () => {
 					</div>
 				</div>
 			</section>
-			<section className="flex flex-col mt-40 mx-5 sm:mx-[50px] xl:mx-[85px]">
-				<SectionTitle text={"My Tech Stack"} />
-				<div className="flex flex-col items-center mt-12 ">
-					<div className="flex flex-col items-center justify-center lg:flex-row pt-12">
+			<section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-40">
+				<div className="w-full max-w-[1275px]">
+					<SectionTitle text={"My Tech Stack"} />
+					<div className="flex flex-col justify-center items-center lg:flex-row lg:space-x-10 pt-12 w-full">
 						<article className="flex flex-col space-y-10">
 							<p className="text-xl text-white min-w-[50%]">Here are some of the technological advancements that have a place in my heart 😊</p>
 							<figure className="overflow-hidden -mx-10 xs:mx-0">
@@ -145,7 +145,7 @@ const About: NextPage = () => {
 							</figure>
 							<figure className="overflow-hidden -mx-10 xs:mx-0">
 								<figcaption className="text-white mx-10 xs:mx-0">Backend:</figcaption>
-								<div className="flex space-x-7 techStackCarousel1 relative">
+								<div className="flex space-x-7 techStackCarousel2 relative">
 									{BEStackIconList.slice(0, 5).map((stack, index) => (
 										<img
 											src={stack.path}
@@ -173,7 +173,7 @@ const About: NextPage = () => {
 							viewBox="0 0 557 596"
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"
-							className="w-full md:max-w-[50%]"
+							className="w-full min-w-[50%] md:max-w-[50%]"
 						>
 							<g clipPath="url(#clip0_1378_355)">
 								<g filter="url(#filter0_d_1378_355)">

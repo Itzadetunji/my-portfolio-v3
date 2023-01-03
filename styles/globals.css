@@ -352,7 +352,7 @@ p {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.techStackCarousel1 {
 		animation: techStackCarouselAnimation1 7s linear infinite;
 	}
