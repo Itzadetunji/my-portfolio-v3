@@ -26,45 +26,47 @@ export const Navbar: NextPage<NavProps> = ({ isOpen, setIsOpen }) => {
 
 	return (
 		<>
-			<nav className="flex flex-row items-center justify-between max-w-[1270px] mx-auto py-4">
-				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer z-50">
-					<Image
-						src="/images/logo.svg"
-						alt="Adetunji's Logo"
-						layout="fill"
-						objectFit="contain"
-					/>
-				</div>
-				<div className="hidden sm:flex space-x-11 justify-self-center ">
-					<NavLink
-						title={"Home"}
-						path={"/"}
-					/>
-					<NavLink
-						title={"About Me"}
-						path={"/about"}
-					/>
-					<NavLink
-						title={"Portfolio"}
-						path={"/portfolio"}
-					/>
-					<NavLink
-						title={"Contact"}
-						path={"/contact"}
-					/>
-				</div>
-				<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer hidden sm:block">
-					<MusicIcon />
-				</div>
-				<div className="sm:hidden z-50">
-					<button
-						onClick={() => setIsOpen(!isOpen)}
-						className={`nav ${isOpen && "open"} scale-[0.75] sm:scale-100 w-16 h-16 relative p-0 bg-transparent border-none outline-none cursor-pointer`}
-					>
-						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
-						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
-						<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
-					</button>
+			<nav className="flex flex-col items-center py-4 px-5 sm:px-[50px] xl:px-[85px]">
+				<div className="flex items-center justify-between w-full max-w-[1270px]">
+					<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer z-50">
+						<Image
+							src="/images/logo.svg"
+							alt="Adetunji's Logo"
+							layout="fill"
+							objectFit="contain"
+						/>
+					</div>
+					<div className="hidden sm:flex space-x-11 justify-self-center ">
+						<NavLink
+							title={"Home"}
+							path={"/"}
+						/>
+						<NavLink
+							title={"About Me"}
+							path={"/about"}
+						/>
+						<NavLink
+							title={"Portfolio"}
+							path={"/portfolio"}
+						/>
+						<NavLink
+							title={"Contact"}
+							path={"/contact"}
+						/>
+					</div>
+					<div className="w-10 md:w-14 h-10 md:h-14 relative cursor-pointer hidden sm:block">
+						<MusicIcon />
+					</div>
+					<div className="sm:hidden z-50">
+						<button
+							onClick={() => setIsOpen(!isOpen)}
+							className={`nav ${isOpen && "open"} scale-[0.75] sm:scale-100 w-16 h-16 relative p-0 bg-transparent border-none outline-none cursor-pointer`}
+						>
+							<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
+							<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
+							<span className="w-full h-[5px] bg-white block absolute rounded-[2px]"></span>
+						</button>
+					</div>
 				</div>
 			</nav>
 		</>

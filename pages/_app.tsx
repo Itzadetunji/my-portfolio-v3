@@ -14,13 +14,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 					rel="stylesheet"
 				></link>
 			</Head>
-			<div className="mx-5 sm:mx-[50px] xl:mx-[85px]">
-				<Navbar
-					isOpen={isOpen}
-					setIsOpen={setIsOpen}
-				/>
-				<SmallNav isOpen={isOpen} />
-			</div>
+			<Navbar
+				isOpen={isOpen}
+				setIsOpen={setIsOpen}
+			/>
+			<SmallNav isOpen={isOpen} />
 			<Component {...pageProps} />
 			<Footer />
 		</>
