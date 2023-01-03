@@ -11,11 +11,16 @@ const About: NextPage = () => {
 	const [selectedState, setSelectedState] = useState<number>(1);
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
-	const stackIconList = [
+	const FEStackIconList = [
 		{ name: "React", path: "/icons/stack-icons/react.svg" },
+		{ name: "Next", path: "/icons/stack-icons/next.svg" },
 		{ name: "Tailwindcss", path: "/icons/stack-icons/tailwind.svg" },
 		{ name: "Javascript", path: "/icons/stack-icons/javascript.svg" },
 		{ name: "Vue", path: "/icons/stack-icons/vue.svg" },
+		{ name: "React", path: "/icons/stack-icons/react.svg" },
+		{ name: "Next", path: "/icons/stack-icons/next.svg" },
+		{ name: "Tailwindcss", path: "/icons/stack-icons/tailwind.svg" },
+		{ name: "Javascript", path: "/icons/stack-icons/javascript.svg" },
 	];
 	return (
 		<>
@@ -100,11 +105,14 @@ const About: NextPage = () => {
 							<figure className="overflow-hidden ">
 								<figcaption className="text-white">Frontend:</figcaption>
 								<div className="flex space-x-7 techStackCarousel1 relative">
-									<img
-										src="/icons/stack-icons/javascript.svg"
-										className="w-20 h-20 mt-4 rounded-md"
-										alt=""
-									/>
+									{FEStackIconList.map((stack, index) => (
+										<img
+											src={stack.path}
+											className="w-20 h-20 mt-4 rounded-md"
+											alt={stack.name}
+											key={index}
+										/>
+									))}
 								</div>
 							</figure>
 							<figure>

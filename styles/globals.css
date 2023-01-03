@@ -340,12 +340,12 @@ p {
 		left: 0;
 	}
 	100% {
-		left: -300px;
+		left: -450px;
 	}
 }
 
 @media only screen and (max-width: 768px) {
 	.techStackCarousel1 {
-		animation: techStackCarouselAnimation1 10s linear infinite;
+		animation: techStackCarouselAnimation1 7s linear infinite;
 	}
 }
