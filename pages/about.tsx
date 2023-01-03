@@ -116,7 +116,7 @@ const About: NextPage = () => {
 			</section>
 			<section className="flex flex-col mt-40 mx-5 sm:mx-[50px] xl:mx-[85px]">
 				<SectionTitle text={"My Tech Stack"} />
-				<div className="flex flex-col items-center">
+				<div className="flex flex-col items-center mt-12 ">
 					<div className="flex flex-col items-center justify-center lg:flex-row pt-12">
 						<article className="flex flex-col space-y-10">
 							<p className="text-xl text-white min-w-[50%]">Here are some of the technological advancements that have a place in my heart 😊</p>
@@ -144,7 +144,7 @@ const About: NextPage = () => {
 								</div>
 							</figure>
 							<figure className="overflow-hidden -mx-10 xs:mx-0">
-								<figcaption className="text-white mx-10 xs:mx-0">Frontend:</figcaption>
+								<figcaption className="text-white mx-10 xs:mx-0">Backend:</figcaption>
 								<div className="flex space-x-7 techStackCarousel1 relative">
 									{BEStackIconList.slice(0, 5).map((stack, index) => (
 										<img
