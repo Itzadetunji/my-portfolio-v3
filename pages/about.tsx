@@ -114,7 +114,7 @@ const About: NextPage = () => {
 					</div>
 				</div>
 			</section>
-			<section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-40">
+			{/* <section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-40">
 				<div className="flex flex-col space-y-12 w-full max-w-[1275px]">
 					<SectionTitle text={"My Tech Stack"} />
 					<div className="flex flex-col justify-center items-center lg:flex-row lg:space-x-10 w-full">
@@ -375,6 +375,18 @@ const About: NextPage = () => {
 								</clipPath>
 							</defs>
 						</svg>
+					</div>
+				</div>
+			</section> */}
+			<section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-40">
+				<div className="flex flex-col space-y-12 w-full max-w-[1275px]">
+					<SectionTitle text={"My Portfolio"} />
+					<div className="h-[430px]">
+						<img
+							src="/images/portfolio.png"
+							alt=""
+							className="w-full h-full object-cover"
+						/>
 					</div>
 				</div>
 			</section>
