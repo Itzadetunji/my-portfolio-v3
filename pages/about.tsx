@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { SectionTitle } from "../components";
+import { PortfolioCard, SectionTitle } from "../components";
 
 interface AboutMeStateProps {
 	selectedState: any;
@@ -381,16 +381,15 @@ const About: NextPage = () => {
 			<section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-40">
 				<div className="flex flex-col space-y-12 w-full max-w-[1275px]">
 					<SectionTitle text={"My Portfolio"} />
-					<div className="relative h-[430px]">
-						<img
-							src="/images/portfolio.png"
-							alt=""
-							className="w-full h-full object-cover opacity-25  transition-opacity duration-500 ease-in-out hover:opacity-100 rounded-md shadow-lg shadow-blue/40"
-						/>
-						<div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-full py-8 px-4 flex flex-col items-center justify-center text-white">
-							
-						</div>
-					</div>
+					<PortfolioCard
+						title={"Coverly: Cover Letter"}
+						location={"HNGi9"}
+						content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+						stacks={["React", "Express", "Azure"]}
+						live={"https://google.com"}
+						github={"https://github.com/itzadetunji"}
+						img={"/images/portfolio.png"}
+					/>
 				</div>
 			</section>
 		</>
