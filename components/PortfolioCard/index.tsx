@@ -19,7 +19,7 @@ export const PortfolioCard: NextPage<PortfolioCardProps> = ({ title, location, c
 				alt=""
 				className="w-full h-full object-cover opacity-25  transition-opacity duration-500 ease-in-out hover:opacity-75 rounded-md shadow-lg shadow-blue/40"
 			/>
-			<div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-full py-8 px-4 flex flex-col justify-between text-white box-border h-[430px]">
+			<div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-full py-8 px-4 flex flex-col justify-between text-white box-border h-full">
 				<div className="flex flex-col space-y-2">
 					<p className="text-xl font-semibold">{title}</p>
 					<p className="text-sm font-light">{location}</p>
