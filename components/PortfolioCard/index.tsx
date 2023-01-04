@@ -13,7 +13,7 @@ interface PortfolioCardProps {
 
 export const PortfolioCard: NextPage<PortfolioCardProps> = ({ title, location, content, stacks, live, github, img }) => {
 	return (
-		<div className="relative h-[430px]">
+		<div className="relative h-[450px]">
 			<img
 				src="/images/portfolio.png"
 				alt=""
