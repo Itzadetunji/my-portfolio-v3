@@ -381,15 +381,35 @@ const About: NextPage = () => {
 			<section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-40">
 				<div className="flex flex-col space-y-12 w-full max-w-[1275px]">
 					<SectionTitle text={"My Portfolio"} />
-					<PortfolioCard
-						title={"Coverly: Cover Letter"}
-						location={"HNGi9"}
-						content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
-						stacks={["React", "Express", "Azure"]}
-						live={"https://google.com"}
-						github={"https://github.com/itzadetunji"}
-						img={"/images/portfolio.png"}
-					/>
+					<div className="flex flex-col space-y-10">
+						<PortfolioCard
+							title={"Coverly: Cover Letter"}
+							location={"HNGi9"}
+							content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+							stacks={["React", "Express", "Azure"]}
+							live={"https://google.com"}
+							github={"https://github.com/itzadetunji"}
+							img={"/images/portfolio.png"}
+						/>
+						<PortfolioCard
+							title={"Coverly: Cover Letter"}
+							location={"HNGi9"}
+							content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+							stacks={["React", "Express", "Azure"]}
+							live={"https://google.com"}
+							github={"https://github.com/itzadetunji"}
+							img={"/images/portfolio.png"}
+						/>
+						<PortfolioCard
+							title={"Coverly: Cover Letter"}
+							location={"HNGi9"}
+							content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+							stacks={["React", "Express", "Azure"]}
+							live={"https://google.com"}
+							github={"https://github.com/itzadetunji"}
+							img={"/images/portfolio.png"}
+						/>
+					</div>
 				</div>
 			</section>
 		</>

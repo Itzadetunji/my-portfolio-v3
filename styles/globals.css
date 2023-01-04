@@ -241,6 +241,15 @@ p {
 .nav.open span:nth-child(2) {
 	animation: span2 1.5s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
 }
+
+.portfolio-container img {
+	filter: grayscale(20%) contrast(1) brightness(70%);
+}
+
+.portfolio-container:hover img {
+	@apply hover:opacity-[0.35];
+}
+
 @keyframes span2 {
 	0% {
 		transform: translate(0, 0) scale(1);

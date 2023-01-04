@@ -13,13 +13,13 @@ interface PortfolioCardProps {
 
 export const PortfolioCard: NextPage<PortfolioCardProps> = ({ title, location, content, stacks, live, github, img }) => {
 	return (
-		<div className="relative h-[450px]">
+		<div className="relative h-fit portfolio-container">
 			<img
 				src="/images/portfolio.png"
 				alt=""
-				className="w-full h-full object-cover opacity-25  transition-opacity duration-500 ease-in-out hover:opacity-75 rounded-md shadow-lg shadow-blue/40"
+				className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-0 object-cover opacity-25 transition-opacity duration-500 ease-in-out rounded-md shadow-lg shadow-blue/40  w-full h-full"
 			/>
-			<div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-full py-8 px-4 flex flex-col justify-between text-white box-border h-full">
+			<div className="w-full py-8 px-4 flex flex-col justify-between text-white box-border space-y-10">
 				<div className="flex flex-col space-y-2">
 					<p className="text-xl font-semibold">{title}</p>
 					<p className="text-sm font-light">{location}</p>
