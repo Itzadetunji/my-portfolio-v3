@@ -377,7 +377,7 @@ const About: NextPage = () => {
 						</svg>
 					</div>
 				</div>
-			</section> */}
+			</section>*/}
 			<section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-40">
 				<div className="flex flex-col space-y-12 w-full max-w-[1275px]">
 					<SectionTitle text={"My Portfolio"} />
