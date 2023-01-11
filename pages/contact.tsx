@@ -15,19 +15,6 @@ const Contact: NextPage = () => {
 		email: "",
 		body: "",
 	});
-	const [name, setName] = useState<string>("");
-	const [subject, setSubject] = useState<string>("");
-	const [email, setEmail] = useState<string>("");
-	const [body, setBody] = useState<string>("");
-	// useEffect(() => {
-	// 	setFormData(() => ({
-	// 		name,
-	// 		subject,
-	// 		email,
-	// 		body,
-	// 	}));
-	// }, [name, subject, email, body]);
-
 	return (
 		<>
 			<div className="mt-10">
