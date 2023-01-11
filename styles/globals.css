@@ -242,12 +242,16 @@ p {
 	animation: span2 1.5s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
 }
 
+/* .portfolio-container:hover .img-container {
+	@apply transition-opacity shadow-lg shadow-blue/40 duration-500 ease-in-out ;
+} */
+
 .portfolio-container img {
 	filter: grayscale(20%) contrast(1) brightness(70%);
 }
 
-.portfolio-container:hover img {
-	@apply hover:opacity-[0.35];
+.portfolio-container img {
+	@apply transition-all ease-in-out duration-[500ms] hover:opacity-[0.35] hover:shadow-lg hover:shadow-blue/40;
 }
 
 @keyframes span2 {
