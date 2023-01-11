@@ -3,10 +3,10 @@
 import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
-	const { name, email, subject, message } = req.body;
+	const { name, email, subject, body } = req.body;
 
-	if (!name || !email || !subject || !message) {
-		return res.status(400).json({ error: "All fields are required" });
+	if (!name || !email || !subject || !body) {
+		return res.status(204).json({ error: "All fields are required" });
 	}
 
 	// Create transporter
@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 		service: "gmail",
 		auth: {
 			user: "adetunjiadeyinka29@gmail.com",
-			pass: "orbetykdwfdwmdsu",
+			pass: process.env.NEXT_GMAIL_APP_PASSWORD,
 		},
 	});
 
@@ -24,7 +24,7 @@ export default async function handler(req, res) {
 		to: "adetunjiadeyinka29@gmail.com",
 		replyTo: email,
 		subject: `${subject} — Contact Form: adetunjiadeyinka.com`,
-		text: message,
+		text: body,
 		html: `
 			<h1>You have a New message from ${email}</h1>
 			<h2>Name:</h2>
@@ -32,7 +32,7 @@ export default async function handler(req, res) {
 			<h2>Subject:</h2>
 			<p>${subject}</p>
 			<h2>Message:</h2>
-			<p>${message}</p>
+			<p>${body}</p>
 		`,
 	};
 
