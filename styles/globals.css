@@ -251,7 +251,7 @@ p {
 }
 
 .portfolio-container img {
-	@apply transition-all ease-in-out duration-[500ms] hover:opacity-[0.35] hover:shadow-lg hover:shadow-blue/40;
+	@apply transition-all ease-in-out duration-500 hover:opacity-[0.35] hover:shadow-lg hover:shadow-blue/40;
 }
 
 @keyframes span2 {
