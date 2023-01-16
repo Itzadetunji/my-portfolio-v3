@@ -21,7 +21,7 @@ const Contact: NextPage = () => {
 		message: null,
 	});
 
-	const handleContactFormSubmit = async (e) => {
+	const handleContactFormSubmit = async (e: React.ChangeEvent<HTMLInputElement>) => {
 		e.preventDefault();
 		try {
 			const response = await fetch("/api/contact", {
@@ -54,59 +54,63 @@ const Contact: NextPage = () => {
 	};
 	return (
 		<>
-			<div className="mt-10">
-				<SectionTitle text="Let's chat" />
-				<form
-					action=""
-					onSubmit={handleContactFormSubmit}
-				>
-					<FormInput
-						placeholder={"Test"}
-						value={formData.name}
-						onChange={(e) => {
-							setFormData({
-								...formData,
-								name: e.target.value,
-							});
-						}}
-					/>
-					<FormInput
-						placeholder={"Test"}
-						value={formData.subject}
-						onChange={(e) => {
-							setFormData({
-								...formData,
-								subject: e.target.value,
-							});
-						}}
-					/>
-					<FormInput
-						placeholder={"Test"}
-						value={formData.email}
-						onChange={(e) => {
-							setFormData({
-								...formData,
-								email: e.target.value,
-							});
-						}}
-					/>
-					<FormInput
-						placeholder={"Test"}
-						value={formData.body}
-						onChange={(e) => {
-							setFormData({
-								...formData,
-								body: e.target.value,
-							});
-						}}
-					/>
-					<input
-						type="submit"
-						id="submit"
-						className="bg-red-900"
-					/>
-				</form>
-			</div>
+			<section className="flex flex-col items-center px-5 sm:px-[50px] xl:px-[85px] mt-10">
+				<div className="flex flex-col space-y-12 w-full max-w-[1275px]">
+					<SectionTitle text="Let's chat" />
+					<form
+						action=""
+						onSubmit={handleContactFormSubmit}
+						className="flex flex-col space-y-10 text-white"
+					>
+						<div className="flex space-x-5 justify-between">
+							<FormInput
+								placeholder={"Enter Name"}
+								value={formData.name}
+								onChange={(e) => {
+									setFormData({
+										...formData,
+										name: e.target.value,
+									});
+								}}
+							/>
+							<FormInput
+								placeholder={"Enter Email Address"}
+								value={formData.email}
+								onChange={(e) => {
+									setFormData({
+										...formData,
+										email: e.target.value,
+									});
+								}}
+							/>
+						</div>
+						<div className="flex">
+							<FormInput
+								placeholder={"Enter subject of message"}
+								value={formData.subject}
+								onChange={(e) => {
+									setFormData({
+										...formData,
+										subject: e.target.value,
+									});
+								}}
+							/>
+						</div>
+						<div className="flex">
+							<textarea
+								className="h-44 bg-gray rounded-md flex flex-1 px-5 pt-5 pb-5 outline-none resize-none"
+								placeholder="Enter message content"
+							></textarea>
+						</div>
+						<button
+							type="submit"
+							className="bg-gray h-11 rounded-md px-6 py-3 w-fit flex items-center justify-center"
+						>
+							Send
+						</button>
+					</form>
+				</div>
+			</section>
 		</>
 	);
 };
@@ -116,7 +120,7 @@ const FormInput: NextPage<FormInputProps> = ({ placeholder, value, onChange }) =
 	return (
 		<>
 			<input
-				className=""
+				className="h-[60px] bg-gray rounded-md flex flex-1 px-5 outline-none"
 				onChange={(e) => onChange(e)}
 				placeholder={placeholder}
 				required
