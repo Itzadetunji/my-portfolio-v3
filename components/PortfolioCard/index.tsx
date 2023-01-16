@@ -23,7 +23,7 @@ export const PortfolioCard: NextPage<PortfolioCardProps> = ({ title, location, c
 					className="rounded"
 				/>
 			</div>
-			<div className="w-full py-8 px-4 flex flex-col justify-between text-white box-border space-y-10">
+			<div className="w-full py-8 px-4 sideflex flex-col justify-between text-white box-border space-y-10">
 				<div className="flex flex-col space-y-2">
 					<p className="text-xl font-semibold">{title}</p>
 					<p className="text-sm font-light">{location}</p>

@@ -54,17 +54,16 @@ export const Icon: NextPage<IconProps> = ({ name, url }) => {
 		<motion.a
 			href={url}
 			rel="noopener noreferrer"
-			className=""
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
 		>
-			<div className="relative w-[54px] h-[54px] flex items-center justify-center cursor-pointer">
+			<div className="relative w-[54px] h-[54px] flex items-center justify-center cursor-pointer z-50 icon-container">
 				<img
 					className="w-6 h-6"
 					src={`./images/social-icons/${name}.svg`}
 					alt=""
 				/>
-				<motion.svg
+				{/* <motion.svg
 					className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] -z-10 duration-200"
 					animate={{ rotate: isHovered ? 90 : 0, y: -27, x: -24 }}
 					width="48"
@@ -77,7 +76,20 @@ export const Icon: NextPage<IconProps> = ({ name, url }) => {
 						d="M20.6136 1.72522C22.5365 0.615045 24.9055 0.615046 26.8284 1.72522L44.0261 11.6543C45.949 12.7645 47.1335 14.8162 47.1335 17.0365V36.8947C47.1335 39.1151 45.949 41.1668 44.0261 42.2769L26.8284 52.206C24.9055 53.3162 22.5365 53.3162 20.6136 52.206L3.41587 42.2769C1.49299 41.1668 0.308456 39.1151 0.308456 36.8947V17.0365C0.308456 14.8162 1.49299 12.7645 3.41587 11.6543L20.6136 1.72522Z"
 						fill="#363C42"
 					/>
-				</motion.svg>
+				</motion.svg> */}
+				<svg
+					className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] -z-10 transition-all ease-in-out duration-500"
+					width="48"
+					height="54"
+					viewBox="0 0 48 54"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M20.6136 1.72522C22.5365 0.615045 24.9055 0.615046 26.8284 1.72522L44.0261 11.6543C45.949 12.7645 47.1335 14.8162 47.1335 17.0365V36.8947C47.1335 39.1151 45.949 41.1668 44.0261 42.2769L26.8284 52.206C24.9055 53.3162 22.5365 53.3162 20.6136 52.206L3.41587 42.2769C1.49299 41.1668 0.308456 39.1151 0.308456 36.8947V17.0365C0.308456 14.8162 1.49299 12.7645 3.41587 11.6543L20.6136 1.72522Z"
+						fill="#363C42"
+					/>
+				</svg>
 			</div>
 		</motion.a>
 	);
