@@ -102,6 +102,13 @@ const Contact: NextPage = () => {
 								<textarea
 									className="h-44 bg-gray rounded-md flex flex-1 px-5 pt-5 pb-5 outline-none resize-none"
 									placeholder="Enter message content"
+									value={formData.body}
+									onChange={(e) => {
+										setFormData({
+											...formData,
+											body: e.target.value,
+										});
+									}}
 								></textarea>
 							</div>
 							<button
